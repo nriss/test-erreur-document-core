@@ -1,0 +1,36 @@
+Logical: FRLMPregnancyObservation
+Id: fr-lm-pregnancy-observation
+Parent: FRLMEntry
+Title: "Logical model- FR LM Pregnancy Observation"
+Description: """Observation sur la grossesse"""
+Characteristics: #can-be-target
+
+* header.status 1..1
+  * ^short = "Statut de l'observation"
+* directSubject[x] 0..1 FRLMPatient or FRLMDevice or FRLMHealthProfessional or FRLMOrganisation or FRLMProcedure "Sujet de l'observation (si different du patient)"
+* observationDate[x] 1..1 dateTime or Period "Date de l'observation"
+* type 1..1 CodeableConcept "Type d'observation"
+  * ^binding.description = "jdv-issue-grossesse-cisis (1.2.250.1.213.1.1.5.731)"
+  * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-issue-grossesse-cisis"
+* method 0..1 CodeableConcept "Methode utilisee"
+  * ^binding.description = "jdv-mode-accouchement-cisis (1.2.250.1.213.1.1.5.735)"
+  * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-accouchement-cisis"
+* result 1..1 Base "Valeur de l'observation"
+  * value[x] 0..1 string or Quantity or Range or Ratio or CodeableConcept "Valeur du resultat"
+  * uncertainty 0..1 Base "Incertitude associee au resultat"
+    * value 1..1 decimal "Niveau d'incertitude du resultat"
+    * type 0..1 Coding "Type d'incertitude"
+  * dataAbsentReason 0..1 CodeableConcept "Raison de l'absence de resultat"
+  * referenceRange 0..* Base "Intervalle de reference"
+    * low 0..1 Quantity "Limite inférieure de l'intervalle"
+    * high 0..1 Quantity "Limite supérieure de l'intervalle"
+    * normalValue 0..1 CodeableConcept "Valeur normale"
+    * type 0..1 CodeableConcept "Type d'intervalle de reference"
+    * appliesTo 0..* CodeableConcept "Population ou contexte d'application"
+    * age 0..1 Range "Tranche d'age"
+    * text 0..1 string "Texte libre de l'intervalle de reference"
+* interpretation 0..* CodeableConcept "Interpretation du resultat"
+* note 0..1 string "Commentaire"
+* component 0..* Base "Composant detaillé de l'observation"
+* derivedFrom[x] 0..* FRLMObservation or FRLMLaboratoryObservation or FRLMImagingStudy "Observation ou examen source dont derive cette information"
+* hasMember[x] 0..* FRLMLaboratoryObservation or FRLMObservation "Observations associees rattachees a cette entree"

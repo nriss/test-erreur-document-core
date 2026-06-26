@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "hl7.cda.uv.core": "^2.0.0-sd"
+  },
+  "devDependencies": {
+    "exceljs": "^4.4.0"
+  }
+}

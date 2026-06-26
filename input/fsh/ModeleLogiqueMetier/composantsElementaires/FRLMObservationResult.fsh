@@ -1,0 +1,38 @@
+Logical: FRLMObservationResult
+Id: fr-lm-observation-result
+Parent: FRLMEntry
+Title: "Logical model - FR LM Observation Result"
+Description: """Résultat d'une observation médicale (résultat d'examen de laboratoire, d'imagerie, etc.)"""
+Characteristics: #can-be-target
+
+* header.status 1..1
+  * ^short = "Statut de l'observation"
+* directSubject[x] 0..1 FRLMPatient or FRLMDevice or FRLMHealthProfessional or FRLMOrganisation or FRLMProcedure "Sujet direct de l'observation si différent du patient, par exemple dans le cas d’une observation portant sur un dispositif implanté. D’autres types de sujets peuvent être autorisés selon les implémentations."
+* observationDate[x] 1..1 dateTime or Period "Date de l'observation"
+* type 1..1 CodeableConcept "Type d'observation"
+  * ^binding.description = "LOINC (2.16.840.1.113883.6.1) ou autre"
+* originalName 0..1 string "Nom de l'observation"
+* method 0..1 CodeableConcept "Méthode utilisée pour l'observation"
+* specimen 0..1 FRLMSpecimen "Prélèvement"
+* order 0..1 FRLMServiceRequest "Demande d'examen correspondante"
+* bodySite 0..1 FRLMBodyStructure "Localisation anatomique"
+* result 1..1 CodeableConcept "Valeur de l'observation"
+* referenceRange 0..* Base "Intervalle de référence. Plusieurs intervalles de référence, de types différents, peuvent être fournis."
+  * low 0..1 Quantity "Limite inférieure de l'intervalle"
+    * ^binding.description = "(preferred): UCUM for units"
+  * high 0..1 Quantity "Limite supérieure de l'intervalle"
+    * ^binding.description = "(preferred): UCUM for units"
+  * normalValue 0..1 CodeableConcept "Valeur normale si pertinente pour l'intervalle"
+    * ^binding.description = "(preferred): SNOMED CT"
+  * type 0..1 CodeableConcept "Type d'intervalle de référence"
+    * ^binding.description = "(preferred): HL7 Observation Reference Range Meaning Codes"
+  * appliesTo 0..* CodeableConcept "Population concernée pour cet intervalle"
+    * ^binding.description = "(preferred): SNOMED CT, HL7 v3-Race"
+  * age 0..1 Range "Tranche d'âge pour cet intervalle"
+    * ^binding.description = "(preferred): UCUM for units"
+  * text 0..1 string "Texte libre"
+* interpretation 0..* CodeableConcept "Interprétation"
+* note 0..1 string "Commentaire"
+* component 0..* Base "Composant dans le cas d'une observation composée de plusieurs sous-observations"
+* derivedFrom[x] 0..* FRLMObservation or FRLMLaboratoryObservation or FRLMImagingStudy "Référence de la resource à partir de laquelle l'observation a été faite. Par exemple, une image échographique à partir de laquelle une mesure fœtale est réalisée."
+* hasMember[x] 0..* FRLMLaboratoryObservation or FRLMObservation "Cette observation est un groupe d'observations (par exemple, une batterie de tests, un ensemble de mesures de signes vitaux)."
