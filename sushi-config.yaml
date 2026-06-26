@@ -1,0 +1,721 @@
+# Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
+
+id: ans.document.fr.core
+canonical: https://interop.esante.gouv.fr/ig/document/core # the last part of canonical and id must be the same
+name: FRDocumentCore # Should be an acronym
+title: ANS IG document core
+publisher:
+  name: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris
+  url: https://esante.gouv.fr
+status: draft
+version: 0.1.0-snapshot # shall conforms to Semantic Versioning https://fr.wiktionary.org/wiki/SemVer
+fhirVersion: 4.0.1
+copyrightYear: 2020+
+releaseLabel: ci-build # le release label doit être conforme au cycle de vie de la doctrine du ci-sis
+jurisdiction: urn:iso:std:iso:3166#FR "FRANCE"
+
+parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
+  shownav: 'true'
+  excludettl: 'true'
+  generate-turtle: 'false'
+  generate-json: 'false'
+  i18n-default-lang: fr
+  i18n-lang:
+    - en
+  translation-sources:
+    - input/translations/en
+  path-expansion-params: '../../expansion-params.json'
+
+dependencies:
+  hl7.cda.uv.core: 2.0.3-sd
+  ans.fr.terminologies: latest
+  hl7.fhir.fr.core: 2.1.0
+  hl7.fhir.uv.xver-r5.r4: latest
+  ans.fhir.fr.annuaire: 1.1.0
+  hl7.fhir.uv.fhir-clinical-document: latest
+  ihe.pharm.mpd: 1.0.0-comment-2 
+
+pages:
+    index.md:
+        title: Accueil
+    structureGenerale.md:
+        title: Structure générale document
+        introduction.md:
+            title: Introduction
+        exigencesSpecifiques.md:
+            title: Exigences spécifiques
+        ressourcesCDA-struc-gen.md:
+            title: CDA
+        ressourcesFHIR-struc-gen.md:
+            title: FHIR
+        mappingCDA-FHIR-struc-gen.md:
+            title: Mapping CDA / FHIR
+    enteteDocument.md: 
+        title: Entête document
+        ressourcesCDA-entete.md:
+            title: CDA
+        ressourcesFHIR-entete.md:
+            title: FHIR
+        mappingCDA-FHIR-entete.md:
+            title: Mapping Métier/CDA/FHIR
+    corpsDocument.md:
+        title: Corps d'un document  
+        ressourcesCDA-corps.md:
+            title: CDA
+        ressourcesFHIR-corps.md:
+            title: FHIR
+        mappingCDA-FHIR-corps.md:
+            title: Mapping Métier/CDA/FHIR
+    autres_ressources.md:
+        title: Autres Ressources
+        securite.md:
+            title: Sécurité
+        downloads.md:
+            title: Téléchargements et usages
+    translationinfo.md:
+        title: Informations sur la traduction
+
+menu:
+    Accueil: index.html
+    Structure générale document:
+        Introduction: introduction.html
+        Exigences spécifiques: exigencesSpecifiques.html
+        CDA: ressourcesCDA-struc-gen.html
+        FHIR: ressourcesFHIR-struc-gen.html
+        Mapping CDA / FHIR: mappingCDA-FHIR-struc-gen.html
+    Entête document:
+        Modèle logique métier: StructureDefinition-fr-lm-header-document.html
+        CDA: ressourcesCDA-entete.html
+        FHIR: ressourcesFHIR-entete.html
+        Mapping Métier/CDA/FHIR: mappingCDA-FHIR-entete.html
+    Corps d'un document:
+        Modèle logique métier: StructureDefinition-fr-lm-corps-document.html
+        CDA: ressourcesCDA-corps.html
+        FHIR: ressourcesFHIR-corps.html
+        Mapping Métier/CDA/FHIR: mappingCDA-FHIR-corps.html
+    Ressources de conformité: artifacts.html
+    Autres ressources:
+        "Espace de publication du CI-SIS" : new-tab https://esante.gouv.fr/offres-services/ci-sis/espace-publication
+        "Serveur Multi-terminologies": new-tab https://smt.esante.gouv.fr/
+        "Serveur Multi-terminologies / FHIR": new-tab https://smt.esante.gouv.fr/fhir
+        "IG terminologies et jeux de valeurs du CI-SIS": new-tab https://ansforge.github.io/IG-terminologie-de-sante/ig/main/index.html 
+        "Espace de tests du CI-SIS": new-tab https://interop.esante.gouv.fr/
+        "testContenuCDA": new-tab https://github.com/ansforge/TestContenuCDA-3-0
+        Sécurité: securite.html
+        "Standard CDA": new-tab https://hl7.org/cda/stds/online-navigation/index.html
+        "Standard FHIR": new-tab https://hl7.org/fhir/R4/index.html
+        "Documentation des guides d'implémentation de l'ANS": new-tab https://interop.esante.gouv.fr/ig/documentation/index.html 
+        Téléchargements et usage: downloads.html
+        
+groups:
+  Modèles logiques métier de l'entête d'un document:
+    name: Modèles logiques métier de l'entête d'un document
+    resources:
+      - FRLMHeaderDocument	
+      - FRLMPatient
+      - FRLMHealthProfessional
+      - FRLMOrganisation
+      - FRLMInformant
+      - FRLMIntendedRecipient
+      - FRLMLegalAuthentication
+      - FRLMAttester
+      - FRLMDataEnterer
+      - FRLMParticipant
+      - FRLMOrder
+      - FRLMConsent
+      - FRLMLocation
+      - FRLMRelatedPerson
+      - FRLMHumanName
+
+  Modèles logiques métier des sections d'un document: 
+    name: Modèles logiques métier des sections d'un document
+    resources:
+      - StructureDefinition/fr-lm-corps-document
+      #Sections
+      - StructureDefinition/fr-lm-section
+      - StructureDefinition/fr-lm-allergies-and-intolerances
+      - StructureDefinition/fr-lm-family-medical-history
+      - StructureDefinition/fr-lm-history-of-past-illness
+      - StructureDefinition/fr-lm-qr-code
+      - StructureDefinition/fr-lm-note
+      - StructureDefinition/fr-lm-addendum
+      - StructureDefinition/fr-lm-observation-results
+      - StructureDefinition/fr-lm-advance-directives
+      - StructureDefinition/fr-lm-medical-devices-and-implants
+      - StructureDefinition/fr-lm-presented-form
+      - StructureDefinition/fr-lm-attachments
+      - StructureDefinition/fr-lm-predictable-adverse-drug-reaction
+      - StructureDefinition/fr-lm-hazardous-working-conditions
+      - StructureDefinition/fr-lm-social-history
+      - StructureDefinition/fr-lm-procedures
+      - StructureDefinition/fr-lm-result-data
+      - StructureDefinition/fr-lm-examination-report
+      - StructureDefinition/fr-lm-order-information
+      - StructureDefinition/fr-lm-comparison-study
+      - StructureDefinition/fr-lm-exposure-information
+      - StructureDefinition/fr-lm-supporting-information
+      - StructureDefinition/fr-lm-dicom-study-metadata
+      - StructureDefinition/fr-lm-recommendation
+      - StructureDefinition/fr-lm-conclusion
+      - StructureDefinition/fr-lm-medication-dispensations
+      - StructureDefinition/fr-lm-patient-education
+      - StructureDefinition/fr-lm-section-pregnancy-history
+      - StructureDefinition/fr-lm-care-plans
+      - StructureDefinition/fr-lm-medical-device-prescriptions
+      - StructureDefinition/fr-lm-medication-prescription
+      - StructureDefinition/fr-lm-problems
+      - StructureDefinition/fr-lm-vital-signs
+      - StructureDefinition/fr-lm-functional-status
+      - StructureDefinition/fr-lm-medication-summary
+      - StructureDefinition/fr-lm-immunisations
+      - StructureDefinition/fr-lm-reason-for-referral
+      - StructureDefinition/fr-lm-course-of-encounter
+      - StructureDefinition/fr-lm-status-document
+      - StructureDefinition/fr-lm-hospital-discharge-medications
+      - StructureDefinition/fr-lm-traitements-administres
+      - StructureDefinition/fr-lm-alerts
+      - StructureDefinition/fr-lm-admission-evaluation
+      - StructureDefinition/fr-lm-encounter-information
+
+  #Entrées et éléments transversaux
+  Modèles logiques métier des composants communs: 
+    name: Modèles logiques métier des composants communs
+    description: Modèles de données métier représentant les concepts communs, modélisés indépendamment de la syntaxe et de façon plus accessible pour le métier que les éléments techniques CDA et FHIR.
+    resources:
+      - StructureDefinition/fr-lm-entry
+      - StructureDefinition/fr-lm-procedure
+      - StructureDefinition/fr-lm-family-member-history
+      - StructureDefinition/fr-lm-service-request
+      - StructureDefinition/fr-lm-care-plan
+      - StructureDefinition/fr-lm-condition
+      - StructureDefinition/fr-lm-encounter
+      - StructureDefinition/fr-lm-observation
+      - StructureDefinition/fr-lm-allergy-intolerance	
+      - StructureDefinition/fr-lm-advance-directive
+      - StructureDefinition/fr-lm-device-use
+      - StructureDefinition/fr-lm-attachment
+      - StructureDefinition/fr-lm-adverse-event
+      - StructureDefinition/fr-lm-observation-related-to-prevention
+      - StructureDefinition/fr-lm-observation-work-related-accident
+      - StructureDefinition/fr-lm-observation-long-term-condition
+      - StructureDefinition/fr-lm-observation-assessment
+      - StructureDefinition/fr-lm-assessments
+      - StructureDefinition/fr-lm-evolution-adverse-event
+      - StructureDefinition/fr-lm-severity-adverse-event
+      - StructureDefinition/fr-lm-observation-social-history
+      - StructureDefinition/fr-lm-hors-amm
+      - StructureDefinition/fr-lm-observation-media
+      - StructureDefinition/fr-lm-imputabilite-effet-indesirable
+      - StructureDefinition/fr-lm-non-remboursable
+      - StructureDefinition/fr-lm-pregnancy-observation
+      - StructureDefinition/fr-lm-pregnancy-status
+      - StructureDefinition/fr-lm-pregnancy-history
+      - StructureDefinition/fr-lm-medication
+      - StructureDefinition/fr-lm-dose-number
+      - StructureDefinition/fr-lm-resultats-entree
+      - StructureDefinition/fr-lm-resultats-examens-biologie-medicale
+      - StructureDefinition/fr-lm-observation-vital-sign
+      - StructureDefinition/fr-lm-status
+      - StructureDefinition/fr-lm-medication-administration
+      - StructureDefinition/fr-lm-dicom-medication-administration
+      - StructureDefinition/fr-lm-immunization-recommendation
+      - StructureDefinition/fr-lm-immunisation
+      - StructureDefinition/fr-lm-medication-dispense
+      - StructureDefinition/fr-lm-reference-item-prescription
+      - StructureDefinition/fr-lm-specimen
+      - StructureDefinition/fr-lm-batterie-examens-biologie-medicale
+      - StructureDefinition/fr-lm-isolat-microbiologique
+      - StructureDefinition/fr-lm-resultat-examens-biologie-element-clinique-pertinent
+      - StructureDefinition/fr-lm-imaging-study
+      - StructureDefinition/fr-lm-series
+      - StructureDefinition/fr-lm-sop-instance
+      - StructureDefinition/fr-lm-technique-imagerie
+      - StructureDefinition/fr-lm-prescription-item
+      - StructureDefinition/fr-lm-quantity-exposure
+      - StructureDefinition/fr-lm-status-document-entry
+      - StructureDefinition/fr-lm-transfusion-de-produits-sanguins
+      - StructureDefinition/fr-lm-synthese-medicale-sejour
+      - StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants
+      - StructureDefinition/fr-lm-modalite-sortie
+      - StructureDefinition/fr-lm-modalite-entree
+      - StructureDefinition/fr-lm-adverse-event-following-administration-blood-derivatives
+      - StructureDefinition/fr-lm-adverse-event-during-hospitalization
+      - StructureDefinition/fr-lm-administration-blood-derivatives
+      - StructureDefinition/fr-lm-transfusion-accidents
+      - StructureDefinition/fr-lm-patient-transfer
+      - StructureDefinition/fr-lm-recherche-de-micro-organismes
+      - StructureDefinition/fr-lm-sujet-non-humain
+      - StructureDefinition/fr-lm-patient-sujet-non-humain
+      - StructureDefinition/fr-lm-laboratoire-executant
+      - StructureDefinition/fr-lm-device
+      - StructureDefinition/fr-lm-dosageInstructions
+      - StructureDefinition/fr-lm-prescription-entree
+      - StructureDefinition/fr-lm-laboratory-observation
+      - StructureDefinition/fr-lm-body-structure
+      - StructureDefinition/fr-lm-travel-history
+  Ressources CDA entête:
+    name: Eléments CDA de l'entête
+    #description: Profils CDA
+    resources:
+      - StructureDefinition/fr-cda-clinical-document
+      - StructureDefinition/fr-cda-assigned-entity
+      - StructureDefinition/fr-cda-associated-entity
+      - StructureDefinition/fr-cda-record-target
+      - StructureDefinition/fr-cda-author
+      - StructureDefinition/fr-cda-data-enterer
+      - StructureDefinition/fr-cda-assigned-author
+      - StructureDefinition/fr-cda-informant
+      - StructureDefinition/fr-cda-related-entity
+      - StructureDefinition/fr-cda-custodian
+      - StructureDefinition/fr-cda-information-recipient
+      - StructureDefinition/fr-cda-assigned-custodian
+      - StructureDefinition/fr-cda-legal-authenticator
+      - StructureDefinition/fr-cda-authorization
+      - StructureDefinition/fr-cda-inFulfillment-of
+      - StructureDefinition/fr-cda-documentation-of
+      - StructureDefinition/fr-cda-performer
+      - StructureDefinition/fr-cda-related-document
+      - StructureDefinition/fr-cda-component-of
+      - StructureDefinition/fr-cda-intended-recipient
+      - StructureDefinition/fr-cda-patient-role
+      - StructureDefinition/fr-cda-assigned-person
+      - StructureDefinition/fr-cda-authenticator
+      - StructureDefinition/fr-cda-authoring-device
+      - StructureDefinition/fr-cda-participant-entete
+      - StructureDefinition/fr-cda-patient
+      - StructureDefinition/fr-cda-represented-custodian-organization
+      - StructureDefinition/fr-cda-represented-organization
+      - StructureDefinition/fr-cda-service-event
+      - StructureDefinition/fr-cda-order
+      - StructureDefinition/fr-cda-parent-document
+      - FRCDAName
+      - StructureDefinition/fr-cda-encompassing-encounter
+      - StructureDefinition/fr-cda-encounter-participant
+      - StructureDefinition/fr-cda-health-care-facility
+
+  Ressources CDA corps des sections :
+    name: Eléments CDA du corps des sections
+    resources:
+      - StructureDefinition/fr-cda-allergies-et-hypersensibilites
+      - StructureDefinition/fr-cda-section-antecedents-familiaux
+      - StructureDefinition/fr-cda-antecedents-medicaux
+      - StructureDefinition/fr-cda-code-a-barres
+      - StructureDefinition/fr-cda-commentaire-non-code
+      - StructureDefinition/fr-cda-cr-bio-chapitre
+      - StructureDefinition/fr-cda-cr-bio-sous-chapitre
+      - StructureDefinition/fr-cda-dicom-acte-imagerie
+      - StructureDefinition/fr-cda-dicom-addendum
+      - StructureDefinition/fr-cda-dicom-complications
+      - StructureDefinition/fr-cda-dicom-conclusion
+      - StructureDefinition/fr-cda-dicom-demande-examen
+      - StructureDefinition/fr-cda-dicom-examen-comparatif
+      - StructureDefinition/fr-cda-dicom-exposition-aux-radiations
+      - StructureDefinition/fr-cda-dicom-historique-medical
+      - StructureDefinition/fr-cda-dicom-informations-cliniques
+      - StructureDefinition/fr-cda-dicom-object-catalog
+      - StructureDefinition/fr-cda-dicom-resultats
+      - StructureDefinition/fr-cda-dispensation-medicaments
+      - StructureDefinition/fr-cda-document-pdf-copie
+      - StructureDefinition/fr-cda-documents-ajoutes
+      - StructureDefinition/fr-cda-education-du-patient
+      - StructureDefinition/fr-cda-effets-indesirables
+      - StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code
+      - StructureDefinition/fr-cda-fonctions-physiques
+      - StructureDefinition/fr-cda-section-habitus-mode-de-vie
+      - StructureDefinition/fr-cda-historique-des-actes
+      - StructureDefinition/fr-cda-historique-des-grossesses
+      - StructureDefinition/fr-cda-plan-de-soins
+      - StructureDefinition/fr-cda-points-de-vigilances-non-code
+      - StructureDefinition/fr-cda-prescription-dispositifs-medicaux
+      - StructureDefinition/fr-cda-prescription-medicaments
+      - StructureDefinition/fr-cda-problemes-actifs
+      - StructureDefinition/fr-cda-raison-de-la-recommandation
+      - StructureDefinition/fr-cda-raison-de-la-recommandation-non-code
+      - StructureDefinition/fr-cda-section-resultats
+      - StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention
+      - StructureDefinition/fr-cda-resultats-evenements
+      - StructureDefinition/fr-cda-resultats-examens
+      - StructureDefinition/fr-cda-resultats-examens-non-code
+      - StructureDefinition/fr-cda-section-signes-vitaux
+      - StructureDefinition/fr-cda-statut-du-document
+      - StructureDefinition/fr-cda-statut-fonctionnel
+      - StructureDefinition/fr-cda-traitements
+      - StructureDefinition/fr-cda-traitements-administres
+      - StructureDefinition/fr-cda-traitements-a-la-sortie
+      - StructureDefinition/fr-cda-vaccinations
+
+  Ressources CDA corps des composants élémentaires :
+    name: Eléments CDA corps des composants élémentaires
+    resources:
+      - StructureDefinition/cisis-telecom
+      - StructureDefinition/cisis-addr
+      - StructureDefinition/fr-cda-accidents-transfusionnels
+      - StructureDefinition/fr-cda-acte
+      - StructureDefinition/fr-cda-simple-observation
+      - StructureDefinition/fr-cda-reference-interne
+      - StructureDefinition/fr-cda-performer-corps
+      - StructureDefinition/fr-cda-participant-corps
+      - StructureDefinition/fr-cda-participant-role
+      - StructureDefinition/fr-cda-dicom-cadres-a-afficher
+      - StructureDefinition/fr-cda-dicom-cadres-references
+      - StructureDefinition/fr-cda-dicom-examen-imagerie
+      - StructureDefinition/fr-cda-dicom-exposition-patient
+      - StructureDefinition/fr-cda-dicom-observation
+      - StructureDefinition/fr-cda-dicom-observation-subordonnee
+      - StructureDefinition/fr-cda-dicom-quantite
+      - StructureDefinition/fr-cda-dicom-quantite-subordonnee
+      - StructureDefinition/fr-cda-dicom-serie-imagerie
+      - StructureDefinition/fr-cda-informant-apsr
+      - StructureDefinition/fr-cda-laboratoire-executant
+      - StructureDefinition/fr-cda-participant-apsr
+      - StructureDefinition/fr-cda-signes-vitaux
+      - StructureDefinition/fr-cda-signe-vital-observe
+      - StructureDefinition/fr-cda-statut
+      - StructureDefinition/fr-cda-statut-clinique-du-patient
+      - StructureDefinition/fr-cda-statut-document
+      - StructureDefinition/fr-cda-statut-du-probleme
+      - StructureDefinition/fr-cda-sujet
+      - StructureDefinition/fr-cda-sujet-personne
+      - StructureDefinition/fr-cda-synthese-medicale-sejour
+      - StructureDefinition/fr-cda-traitement
+      - StructureDefinition/fr-cda-traitement-dispense
+      - StructureDefinition/fr-cda-traitement-prescrit
+      - StructureDefinition/fr-cda-traitement-prescrit-subordonne
+      - StructureDefinition/fr-cda-transfusion-de-produits-sanguins
+      - StructureDefinition/fr-cda-transport-du-patient
+      - StructureDefinition/fr-cda-transport-du-professionnel
+      - StructureDefinition/fr-cda-type-document-attache
+      - StructureDefinition/fr-cda-vaccination
+      - StructureDefinition/fr-cda-vaccin-recommande
+      - StructureDefinition/fr-cda-dicom-administration-produit-de-sante
+      - StructureDefinition/fr-cda-dicom-administration-radiopharmaceutique
+      - StructureDefinition/fr-cda-gravite-effet-indesirable
+      - StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation
+      - StructureDefinition/fr-cda-habitus-mode-de-vie
+      - StructureDefinition/fr-cda-historique-de-la-grossesse
+      - StructureDefinition/fr-cda-hors-amm
+      - StructureDefinition/fr-cda-identification-micro-organismes-multiresistants
+      - StructureDefinition/fr-cda-image-illustrative
+      - StructureDefinition/fr-cda-imputabilite-effet-indesirable
+      - StructureDefinition/fr-cda-instruction-au-patient
+      - StructureDefinition/fr-cda-instructions-au-dispensateur
+      - StructureDefinition/fr-cda-instructions-au-patient
+      - StructureDefinition/fr-cda-isolat-microbiologique
+      - StructureDefinition/fr-cda-item-plan-traitement
+      - StructureDefinition/fr-cda-liste-des-allergies-et-hypersensibilites
+      - StructureDefinition/fr-cda-liste-des-problemes
+      - StructureDefinition/fr-cda-modalite-entree
+      - StructureDefinition/fr-cda-modalite-sortie
+      - StructureDefinition/fr-cda-naissance
+      - StructureDefinition/fr-cda-non-remboursable
+      - StructureDefinition/fr-cda-notes-du-dispensateur
+      - StructureDefinition/fr-cda-observation-sur-la-grossesse
+      - StructureDefinition/fr-cda-organisme-assurance-maladie
+      - StructureDefinition/fr-cda-patient-avec-sujet-non-humain
+      - StructureDefinition/fr-cda-periode-de-renouvellement
+      - StructureDefinition/fr-cda-rang-de-la-vaccination
+      - StructureDefinition/fr-cda-recherche-de-micro-organismes
+      - StructureDefinition/fr-cda-reference-item-plan-traitement
+      - StructureDefinition/fr-cda-reference-item-prescription
+      - StructureDefinition/fr-cda-references-externes
+      - StructureDefinition/fr-cda-rencontre
+      - StructureDefinition/fr-cda-resultat
+      - StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent
+      - StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale
+      - StructureDefinition/fr-cda-severite
+      - StructureDefinition/fr-cda-sujet-non-humain
+      - StructureDefinition/fr-cda-observation-sur-echelle-douleur
+      - StructureDefinition/fr-cda-acte-substitution
+      - StructureDefinition/fr-cda-administration-de-derives-du-sang
+      - StructureDefinition/fr-cda-allergie-ou-hypersensibilite
+      - StructureDefinition/fr-cda-antecedent-familial-observe
+      - StructureDefinition/fr-cda-antecedents-familiaux
+      - StructureDefinition/fr-cda-autorisation-substitution
+      - StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale
+      - StructureDefinition/fr-cda-certitude
+      - StructureDefinition/fr-cda-commentaire-er
+      - StructureDefinition/fr-cda-criticite
+      - StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi
+      - StructureDefinition/fr-cda-dicom-sop-instance-observation
+      - StructureDefinition/fr-cda-dicom-sop-instance-observation-subordonnee
+      - StructureDefinition/fr-cda-dicom-technique-imagerie
+      - StructureDefinition/fr-cda-directive-anticipee
+      - StructureDefinition/fr-cda-dispositif-medical
+      - StructureDefinition/fr-cda-document-attache
+      - StructureDefinition/fr-cda-dose-antigene
+      - StructureDefinition/fr-cda-effet-indesirable
+      - StructureDefinition/fr-cda-en-rapport-avec-accident-travail
+      - StructureDefinition/fr-cda-en-rapport-avec-ald
+      - StructureDefinition/fr-cda-en-rapport-avec-la-prevention
+      - StructureDefinition/fr-cda-evaluation
+      - StructureDefinition/fr-cda-evaluation-composant
+      - StructureDefinition/fr-cda-evaluation-composant-n2
+      - StructureDefinition/fr-cda-evenement
+      - StructureDefinition/fr-cda-evenement-indesirable-pendant-hospitalisation
+      - StructureDefinition/fr-cda-evenement-indesirable-suite-administration-derives-sang
+      - StructureDefinition/fr-cda-evolution-effet-indesirable
+      - StructureDefinition/fr-cda-prelevement
+      - StructureDefinition/fr-cda-prescription
+      - StructureDefinition/fr-cda-probleme
+      - StructureDefinition/fr-cda-produit-de-sante
+      - StructureDefinition/fr-cda-quantite-de-produit
+      - StructureDefinition/fr-cda-dicom-objectifs-de-reference
+
+
+  Ressources FHIR entête:
+    name: Profils FHIR entête
+    resources:
+      - StructureDefinition/fr-bundle-document
+      - StructureDefinition/fr-composition-document
+      - StructureDefinition/fr-patient-document
+      - StructureDefinition/fr-patient-ins-document
+      - StructureDefinition/fr-practitionerRole-document
+      - StructureDefinition/fr-practitioner-document
+      - StructureDefinition/fr-organization-document
+      - StructureDefinition/fr-device-auteur-document
+      - StructureDefinition/fr-encounter-care-document
+      - StructureDefinition/fr-location-document
+      - StructureDefinition/fr-related-person-document
+     
+  Ressources FHIR corps:
+      name: Profils FHIR corps
+      resources:
+        - StructureDefinition/fr-advance-directive-document
+        - StructureDefinition/fr-adverse-event-document
+        - StructureDefinition/fr-allergy-intolerance-document
+        - StructureDefinition/fr-care-plan-document
+        - StructureDefinition/fr-condition-document
+        - StructureDefinition/fr-device-request-document
+        - StructureDefinition/fr-device-use-statement-document
+        - StructureDefinition/fr-diagnostic-report-document
+        - StructureDefinition/fr-diagnostic-report-bio-chapter-document
+        - StructureDefinition/fr-diagnostic-report-imaging-document
+        - StructureDefinition/fr-document-reference-document
+        - StructureDefinition/fr-encounter-document
+        - StructureDefinition/fr-endpoint-wado-document
+        - StructureDefinition/fr-family-member-history-document
+        - StructureDefinition/fr-imaging-study-document
+        - StructureDefinition/fr-immunization-document
+        - StructureDefinition/fr-immunization-recommendation-document
+        - StructureDefinition/fr-media-document
+        - StructureDefinition/fr-medication-document
+        - StructureDefinition/fr-medication-administration-document
+        - StructureDefinition/fr-medication-statement-document
+        - StructureDefinition/fr-service-request-document
+        - StructureDefinition/fr-medication-dispense-document
+        - StructureDefinition/fr-medication-request-document
+        - StructureDefinition/fr-observation-administration-blood-derivatives-document
+        - StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document
+        - StructureDefinition/fr-observation-birth-event-document
+        - StructureDefinition/fr-observation-blood-product-transfusion-document
+        - StructureDefinition/fr-observation-contra-indications-document
+        - StructureDefinition/fr-observation-laboratory-report-results-document
+        - StructureDefinition/fr-observation-medical-summary-document
+        - StructureDefinition/fr-observation-microorganism-detection-document
+        - StructureDefinition/fr-observation-pregnancy-history-document
+        - StructureDefinition/fr-observation-pain-score-document
+        - StructureDefinition/fr-observation-pregnancy-document
+        - StructureDefinition/fr-observation-radiation-exposure-document
+        - StructureDefinition/fr-observation-transfusion-accidents-document
+        - StructureDefinition/fr-observation-work-related-accident-document
+        - StructureDefinition/fr-observation-survey-document
+        - StructureDefinition/fr-observation-survey-pannel-document
+        - StructureDefinition/fr-observation-social-history-document
+        - StructureDefinition/fr-procedure-imaging-document
+        - StructureDefinition/fr-procedure-document
+        - StructureDefinition/fr-specimen-document
+        - StructureDefinition/fr-pregnancy-history-document
+        - StructureDefinition/fr-observation-result-document
+        - StructureDefinition/fr-task-patient-transport-document
+        - StructureDefinition/fr-observation-vital-signs-panel-document
+        - StructureDefinition/fr-observation-vital-signs-document
+        - StructureDefinition/fr-body-structure-document
+        - StructureDefinition/fr-observation-multiresistant-microorganism-document
+  
+  Data Type FHIR:
+    name: Data Type Profiles 
+    resources:
+      - StructureDefinition/fr-human-name-document
+      - StructureDefinition/fr-accession-number-identifier-document
+      - StructureDefinition/fr-study-instance-uid-identifier-document
+
+  Mapping ML-CDA-FHIR entête:
+    name: Concept Maps de l'entête du document
+    resources:
+      - mappingmodelemetierCDAFHIR
+      - mappingPatientCDAFHIR
+      - mappingAuteurCDAFHIR
+      - mappingOperateurSaisieCDAFHIR	
+      - mappingInformateurCDAFHIR
+      - mappingStructureConservationCDAFHIR
+      - mappingDestinatairePrevuCDAFHIR
+      - mappingResponsableCDAFHIR
+      - mappingValidateurCDAFHIR
+      - mappingParticipantCDAFHIR
+      - mappingPrescriptionCDAFHIR
+      - mappingEvenementCDAFHIR
+      - mappingDocumentDeReferenceCDAFHIR
+      - mappingConsentementCDAFHIR
+      - mappingPriseEnchargeCDAFHIR
+      - mappingPersonneStructureAssignedEntityFHIR
+      - mappingPersonneStructureRelatedEntityFHIR
+      - mappingPersonneStructureAuteurFHIR
+      - mappingSystemeFHIR
+
+  Mapping ML-CDA-FHIR des sections d'un document:
+    name: Concept Maps des sections d'un document
+    resources:
+      - FRSectionImagingResultsLMCDAFHIR
+      - FRSectionImagingClinicalInformationLMCDAFHIR
+      - FRSectionImagingServiceRequestLMCDAFHIR
+      - FRSectionImagingRadiationExposureLMCDAFHIR
+      - FRSectionImagingActLMCDAFHIR
+      - FRSectionImagingAddendumLMCDAFHIR
+      - FRSectionSocialHistoryLMCDAFHIR
+      - FRSectionFunctionalStatusLMCDAFHIR
+      - FRSectionPhysicalFunctionsLMCDAFHIR
+      - FRSectionAllergyIntoleranceLMCDAFHIR
+      - FRSectionFamilyHistoryLMCDAFHIR
+      - FRSectionBarCodesLMCDAFHIR
+      - FRSectionNoteLMCDAFHIR
+      - FRSectionImagingComparisonLMCDAFHIR
+      - FRSectionImagingComplicationsLMCDAFHIR
+      - FRSectionImagingConclusionLMCDAFHIR
+      - FRSectionMedicalHistoryLMCDAFHIR
+      - FRSectionLaboratoryChapterLMCDAFHIR
+      - FRSectionLaboratorySubChapterLMCDAFHIR
+      - FRSectionAdvanceDirectiveLMCDAFHIR
+      - FRSectionMedicalDeviceLMCDAFHIR
+      - FRSectionPDFDocumentCopyLMCDAFHIR
+      - FRSectionAddedDocumentsLMCDAFHIR
+      - FRSectionPatientEducationLMCDAFHIR
+      - FRSectionAdverseEventLMCDAFHIR
+      - FRSectionExposureRadiationLMCDAFHIR
+      - FRSectionUncodedOccupationalRiskFactorsLMCDAFHIR
+      - FRSectionHistoryActsLMCDAFHIR
+      - FRSectionPregnancyHistoryLMCDAFHIR
+      - FRSectionImagingObjectCatalogLMCDAFHIR
+      - FRSectionCarePlanLMCDAFHIR
+      - FRSectionUncodedPointsOfVigilanceLMCDAFHIR
+      - FRSectionPrescriptionOfMedicalDevicesLMCDAFHIR
+      - FRSectionMedicationRequestLMCDAFHIR
+      - FRSectionActiveProblemsLMCDAFHIR
+      - FRSectionReasonForRecommendationLMCDAFHIR
+      - FRSectionUncodedReasonForRecommendationLMCDAFHIR
+      - FRSectionResultsLMCDAFHIR
+      - FRSectionExaminationResultsLMCDAFHIR
+      - FRSectionUncodedExaminationResultsLMCDAFHIR
+      - FRSectionLaboratorySecondIntentionResultsLMCDAFHIR
+      - FRSectionVitalSignsLMCDAFHIR
+      - FRSectionDocumentStatusLMCDAFHIR
+      - FRSectionMedicationsLMCDAFHIR
+      - FRSectionMedicationAdministrationLMCDAFHIR
+      - FRSectionHospitalDischargeMedicationsLMCDAFHIR
+      - FRSectionImmunizationsLMCDAFHIR
+      - FRSectionMedicationDispenseLMCDAFHIR
+
+  Mapping ML-CDA-FHIR des composants communs d'un document:
+    name: Concept Maps des composants communs d'un Document
+    resources:
+      - FRProcedureLMCDAFHIR
+      - FRAdvanceDirectiveLMCDAFHIR
+      - FRAdverseEventLMCDAFHIR
+      - FRAllergyIntoleranceLMCDAFHIR
+      - FRCarePlanLMCDAFHIR
+      - FRConditionLMCDAFHIR
+      - FRDeviceRequestLMCDAFHIR
+      - FRDeviceUseStatementLMCDAFHIR
+      - FRDiagnosticReportLMCDAFHIR
+      - FRDocumentReferenceLMCDAFHIR
+      - FREncounterLMCDAFHIR
+      - FRFamilyMemberHistoriesLMCDAFHIR
+      - FRFamilyMemberHistoryLMCDAFHIR
+      - FRImagingStudyLMCDAFHIR
+      - FRImmunizationLMCDAFHIR
+      - FRImmunizationRecommendationLMCDAFHIR
+      - FRObservationBirthEventLMCDAFHIR
+      - FRMediaLMCDAFHIR
+      - FRMedicationAdministrationLMCDAFHIR
+      - FRMedicationDispenseLMCDAFHIR
+      - FRMedicationLMCDAFHIR
+      - FRMedicationRequestLMCDAFHIR
+      - FRMedicationsCombinaisonRequestLMCDAFHIR
+      - FRMedicationsCombinaisonLMCDAFHIR
+      - FRMedicationStatementLMCDAFHIR
+      - FRObservationAdministrationBloodDerivativesLMCDAFHIR
+      - FRObservationBloodProductTransfusionLMCDAFHIR
+      - FRLaboratoryIsolateResultsLMCDAFHIR
+      - FRLaboratoryBatteryResultsLMCDAFHIR
+      - FRLaboratoryResultsLMCDAFHIR
+      - FRLaboratoryResultClinicalElementLMCDAFHIR
+      - FRObservationMedicalSummaryLMCDAFHIR
+      - FRObservationMicroorganismDetectionLMCDAFHIR
+      - FRObservationMultiresistantMicroorganismsIdentificationLMCDAFHIR
+      - FRObservationPregnancyLMCDAFHIR
+      - FRObservationPregnancyHistoryLMCDAFHIR
+      - FRImagingQuantityLMCDAFHIR
+      - FRResultsLMCDAFHIR
+      - FRObservationResultLMCDAFHIR
+      - FRObservationSocialHistoryLMCDAFHIR
+      - FRObservationSurveyPannelLMCDAFHIR
+      - FRObservationSurveyLMCDAFHIR
+      - FRObservationSurveyComponentLMCDAFHIR
+      - FRObservationSurveyComponentN2LMCDAFHIR
+      - FRObservationTransfusionAccidentsLMCDAFHIR
+      - FRObservationVitalSignsLMCDAFHIR
+      - FRObservationVitalSignsPanelLMCDAFHIR
+      - FRObservationWorkRelatedAccidentLMCDAFHIR
+      - FRPregnancyHistoryLMCDAFHIR
+      - FRImagingProcedureLMCDAFHIR
+      - FRServiceRequestLMCDAFHIR
+      - FRSpecimenLMCDAFHIR
+      - FRImagingMedicationAministrationLMCDAFHIR
+      - FRImagingRadiationExposureAuthorizationLMCDAFHIR
+      - FRAllowedSubstitutionLMCDAFHIR
+      - FRActSubstitutionLMCDAFHIR
+      - FRCertitudeLMCDAFHIR
+      - FRCriticiteLMCDAFHIR
+      - FRNoteLMCDAFHIR
+      - FRParticipantCorpsLMCDAFHIR
+      - FRObservationLMCDAFHIR
+      - FRPatientWithNonHumanSubjectLMCDAFHIR
+      - FRNonHumanSubjectLMCDAFHIR
+      - FRImagingSeriesLMCDAFHIR
+
+resources: 
+  Binary/BIO-CR-BIO-2024.01-Microbiologie-V1:
+    name: BIO-CR-BIO_2024.01_Microbiologie_V1
+    description: Compte-rendu d’examens de biologie médicale - exemple Microbiologie (BIO-CR-BIO-2024.01)
+    exampleBoolean: true
+    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
+  Binary/eDISP-MED-2024.01:
+    name: eDISP-MED-2024.01
+    description: eDispensation de médicaments (eDISP-MED-2024.01)
+    exampleBoolean: true
+    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
+  Binary/eP-MED-DM-2024.01-PosoStruct:
+    name: eP-MED-DM_2024.01_PosoStruct
+    description: ePrescription de médicaments et/ou de dispositifs médicaux (eP-MED-DM_2024.01)
+    exampleBoolean: true
+    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
+  Binary/eP-MED-DM-2024.01-PosoNonStruct:
+    name: eP-MED-DM_2024.01_PosoNonStruct
+    description: ePrescription de médicaments et/ou de dispositifs médicaux (eP-MED-DM_2024.01)
+    exampleBoolean: true
+    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
+#   Binary/IMG-CR-IMG-2024.01:
+#     name: IMG-CR-IMG
+#     description: Compte-rendu d'examen d'imagerie médicale (IMG_CR_IMG_2024.01)
+#     exampleBoolean: true
+#     profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
+  Binary/IPS-FR-2024.01:
+    name: IPS-FR
+    description: Volet International Patient Summary - France (IPS-FR_2024.01)
+    exampleBoolean: true
+    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
+  Binary/LDL-SES-2022.01:
+    name: LDL-SES_2022.01
+    description: Document Lettre de liaison à la sortie d'un établissement de soins (LDL-SES_2022.01)
+    exampleBoolean: true
+    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
+    
