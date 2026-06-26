@@ -1,0 +1,19 @@
+id: test.erreur.cda
+canonical: https://example.org/test-erreur-cda
+name: TestErreurCDA
+status: draft
+version: 0.0.1
+fhirVersion: 4.0.1
+copyrightYear: 2026+
+releaseLabel: ci-build
+jurisdiction: urn:iso:std:iso:3166#FR "FRANCE"
+
+parameters:
+  i18n-default-lang: fr
+  i18n-lang:
+    - en
+  translation-sources:
+    - input/translations/en
+
+dependencies:
+  hl7.cda.uv.core: 2.0.3-sd
