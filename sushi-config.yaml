@@ -1,0 +1,20 @@
+id: test.erreur.fhir
+canonical: https://example.org/test-erreur-fhir
+name: TestErreurFHIR
+status: draft
+version: 0.0.1
+fhirVersion: 4.0.1
+copyrightYear: 2026+
+releaseLabel: ci-build
+jurisdiction: urn:iso:std:iso:3166#FR "FRANCE"
+
+parameters:
+  i18n-default-lang: fr
+  i18n-lang:
+    - en
+  translation-sources:
+    - input/translations/en
+
+dependencies:
+  hl7.fhir.fr.core: 2.1.0
+  ans.fr.terminologies: latest
