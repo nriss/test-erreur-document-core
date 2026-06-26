@@ -17,4 +17,3 @@ parameters:
 
 dependencies:
   hl7.fhir.fr.core: 2.1.0
-  ans.fr.terminologies: latest
