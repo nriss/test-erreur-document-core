@@ -1,0 +1,15 @@
+{
+    "package-id" : "ans.document.fr.core",
+    "version" : "0.1.0-snapshot",
+    "path" : "https://interop.esante.gouv.fr/ig/document/core/0.1.0-snapshot",
+    "mode" : "working",
+    "status" : "draft",
+    "sequence" : "Draft",
+    "title" : "ANS IG document core",
+    "first" : true,
+    "desc" : "Première version snapshot de l'IG Document Core, posant le socle commun des documents de santé en France (CDA et FHIR) et établissant les correspondances entre les deux standards.",
+    "ci-build" : "https://ansforge.github.io/interop-IG-document-core/main/ig",
+    "category" : "Clinical Documents",
+    "introduction" : "Cet Implementation Guide constitue le socle commun des documents de santé en France, couvrant à la fois les documents CDA (Clinical Document Architecture) et FHIR tels que définis dans le CI-SIS de l'ANS. Il décrit les concepts fondamentaux partagés entre les deux standards et établit les correspondances entre leurs structures, permettant aux éditeurs et intégrateurs de comprendre et d'implémenter les deux approches de manière cohérente.",
+    "changes": "change-log.html"
+}
