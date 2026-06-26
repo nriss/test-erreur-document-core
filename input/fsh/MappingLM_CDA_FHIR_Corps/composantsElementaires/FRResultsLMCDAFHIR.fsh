@@ -1,0 +1,75 @@
+Instance: FRResultsLMCDAFHIR
+InstanceOf: ConceptMap
+Usage: #definition
+Title: "Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument"
+Description: "Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument."
+* title = "Mapping Métier/CDA/FHIR : \"Résultats classés par type d’examens (BIO, IMG, etc…)\""
+* status = #draft
+
+// Groupe Mapping 1 : modèle métier → CDA
+* group[+].source = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats-entry"
+* group[=].target = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats"
+// Élément racine
+* group[=].element[+].code = #FRLMResultatsEntry
+* group[=].element[=].target.code = #FRCDAResultats
+* group[=].element[=].target.equivalence = #equivalent
+// Identifiant de l'entrée
+* group[=].element[+].code = #FRLMResultatsEntry.identifiant
+* group[=].element[=].target.code = #FRCDAResultats.id
+* group[=].element[=].target.equivalence = #equivalent
+// Code de l'entrée
+* group[=].element[+].code = #FRLMResultatsEntry.code
+* group[=].element[=].target.code = #FRCDAResultats.code
+* group[=].element[=].target.equivalence = #equivalent
+// Statut de l'entrée
+* group[=].element[+].code = #FRLMResultatsEntry.statut
+* group[=].element[=].target.code = #FRCDAResultats.statusCode
+* group[=].element[=].target.equivalence = #equivalent
+// Date de l'entrée
+* group[=].element[+].code = #FRLMResultatsEntry.date
+* group[=].element[=].target.code = #FRCDAResultats.effectiveTime
+* group[=].element[=].target.equivalence = #equivalent
+// Exécutant (laboratoire)
+* group[=].element[+].code = #FRLMResultatsEntry.executant
+* group[=].element[=].target.code = #FRCDAResultats.performer
+* group[=].element[=].target.equivalence = #equivalent
+// Auteur
+* group[=].element[+].code = #FRLMResultatsEntry.auteur
+* group[=].element[=].target.code = #FRCDAResultats.author
+* group[=].element[=].target.equivalence = #equivalent
+// Résultat (observation)
+* group[=].element[+].code = #FRLMResultatsEntry.resultat
+* group[=].element[=].target.code = #FRCDAResultats.component:frResultat
+* group[=].element[=].target.equivalence = #equivalent
+
+// Groupe Mapping 2 : CDA FRCDAResultats → FHIR FRDiagnosticReportDocument
+* group[+].source = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats"
+* group[=].target = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-document"
+// Identifiant
+* group[=].element[+].code = #FRCDAResultats.id
+* group[=].element[=].target.code = #FRDiagnosticReportDocument.identifier
+* group[=].element[=].target.equivalence = #equivalent
+// Code
+* group[=].element[+].code = #FRCDAResultats.code
+* group[=].element[=].target.code = #FRDiagnosticReportDocument.code
+* group[=].element[=].target.equivalence = #equivalent
+// Statut
+* group[=].element[+].code = #FRCDAResultats.statusCode
+* group[=].element[=].target.code = #FRDiagnosticReportDocument.status
+* group[=].element[=].target.equivalence = #equivalent
+// Date (effectiveTime)
+* group[=].element[+].code = #FRCDAResultats.effectiveTime
+* group[=].element[=].target.code = #FRDiagnosticReportDocument.effectiveDateTime
+* group[=].element[=].target.equivalence = #equivalent
+// Exécutant (performer)
+* group[=].element[+].code = #FRCDAResultats.performer
+* group[=].element[=].target.code = #FRDiagnosticReportDocument.performer
+* group[=].element[=].target.equivalence = #equivalent
+// Auteur (author)
+* group[=].element[+].code = #FRCDAResultats.author
+* group[=].element[=].target.code = #FRDiagnosticReportDocument.resultsInterpreter
+* group[=].element[=].target.equivalence = #equivalent
+// Résultats (component → result)
+* group[=].element[+].code = #FRCDAResultats.component:frResultat
+* group[=].element[=].target.code = #FRDiagnosticReportDocument.result:FRObservationResultDocument
+* group[=].element[=].target.equivalence = #equivalent
