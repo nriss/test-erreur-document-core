@@ -16,8 +16,6 @@ jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
 
 parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
   shownav: 'true'
-  excludettl: 'true'
-  generate-turtle: 'false'
   i18n-default-lang: fr
   i18n-lang:
     - en
@@ -93,17 +91,6 @@ menu:
         FHIR: ressourcesFHIR-corps.html
         Mapping Métier/CDA/FHIR: mappingCDA-FHIR-corps.html
     Ressources de conformité: artifacts.html
-    Autres ressources:
-        "Espace de publication du CI-SIS" : new-tab https://esante.gouv.fr/offres-services/ci-sis/espace-publication
-        "Serveur Multi-terminologies": new-tab https://smt.esante.gouv.fr/
-        "Serveur Multi-terminologies / FHIR": new-tab https://smt.esante.gouv.fr/fhir
-        "IG terminologies et jeux de valeurs du CI-SIS": new-tab https://ansforge.github.io/IG-terminologie-de-sante/ig/main/index.html 
-        "Espace de tests du CI-SIS": new-tab https://interop.esante.gouv.fr/
-        "testContenuCDA": new-tab https://github.com/ansforge/TestContenuCDA-3-0
-        Sécurité: securite.html
-        "Standard CDA": new-tab https://hl7.org/cda/stds/online-navigation/index.html
-        "Standard FHIR": new-tab https://hl7.org/fhir/R4/index.html
-        "Documentation des guides d'implémentation de l'ANS": new-tab https://interop.esante.gouv.fr/ig/documentation/index.html 
-        Téléchargements et usage: downloads.html
+
 
     
