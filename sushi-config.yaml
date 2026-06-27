@@ -43,20 +43,14 @@ pages:
             title: Exigences spécifiques
         ressourcesCDA-struc-gen.md:
             title: CDA
-        ressourcesFHIR-struc-gen.md:
-            title: FHIR
     enteteDocument.md: 
         title: Entête document
         ressourcesCDA-entete.md:
             title: CDA
-        ressourcesFHIR-entete.md:
-            title: FHIR
     corpsDocument.md:
         title: Corps d'un document  
         ressourcesCDA-corps.md:
             title: CDA
-        ressourcesFHIR-corps.md:
-            title: FHIR
     autres_ressources.md:
         title: Autres Ressources
         securite.md:
@@ -72,17 +66,14 @@ menu:
         Introduction: introduction.html
         Exigences spécifiques: exigencesSpecifiques.html
         CDA: ressourcesCDA-struc-gen.html
-        FHIR: ressourcesFHIR-struc-gen.html
         Mapping CDA / FHIR: mappingCDA-FHIR-struc-gen.html
     Entête document:
         Modèle logique métier: StructureDefinition-fr-lm-header-document.html
         CDA: ressourcesCDA-entete.html
-        FHIR: ressourcesFHIR-entete.html
         Mapping Métier/CDA/FHIR: mappingCDA-FHIR-entete.html
     Corps d'un document:
         Modèle logique métier: StructureDefinition-fr-lm-corps-document.html
         CDA: ressourcesCDA-corps.html
-        FHIR: ressourcesFHIR-corps.html
         Mapping Métier/CDA/FHIR: mappingCDA-FHIR-corps.html
     Ressources de conformité: artifacts.html
 
