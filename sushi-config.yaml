@@ -106,41 +106,5 @@ menu:
         "Standard FHIR": new-tab https://hl7.org/fhir/R4/index.html
         "Documentation des guides d'implémentation de l'ANS": new-tab https://interop.esante.gouv.fr/ig/documentation/index.html 
         Téléchargements et usage: downloads.html
-        
-resources: 
-  Binary/BIO-CR-BIO-2024.01-Microbiologie-V1:
-    name: BIO-CR-BIO_2024.01_Microbiologie_V1
-    description: Compte-rendu d’examens de biologie médicale - exemple Microbiologie (BIO-CR-BIO-2024.01)
-    exampleBoolean: true
-    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
-  Binary/eDISP-MED-2024.01:
-    name: eDISP-MED-2024.01
-    description: eDispensation de médicaments (eDISP-MED-2024.01)
-    exampleBoolean: true
-    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
-  Binary/eP-MED-DM-2024.01-PosoStruct:
-    name: eP-MED-DM_2024.01_PosoStruct
-    description: ePrescription de médicaments et/ou de dispositifs médicaux (eP-MED-DM_2024.01)
-    exampleBoolean: true
-    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
-  Binary/eP-MED-DM-2024.01-PosoNonStruct:
-    name: eP-MED-DM_2024.01_PosoNonStruct
-    description: ePrescription de médicaments et/ou de dispositifs médicaux (eP-MED-DM_2024.01)
-    exampleBoolean: true
-    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
-#   Binary/IMG-CR-IMG-2024.01:
-#     name: IMG-CR-IMG
-#     description: Compte-rendu d'examen d'imagerie médicale (IMG_CR_IMG_2024.01)
-#     exampleBoolean: true
-#     profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
-  Binary/IPS-FR-2024.01:
-    name: IPS-FR
-    description: Volet International Patient Summary - France (IPS-FR_2024.01)
-    exampleBoolean: true
-    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
-  Binary/LDL-SES-2022.01:
-    name: LDL-SES_2022.01
-    description: Document Lettre de liaison à la sortie d'un établissement de soins (LDL-SES_2022.01)
-    exampleBoolean: true
-    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
+
     
