@@ -18,7 +18,6 @@ parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/Code
   shownav: 'true'
   excludettl: 'true'
   generate-turtle: 'false'
-  generate-json: 'false'
   i18n-default-lang: fr
   i18n-lang:
     - en
