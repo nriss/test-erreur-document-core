@@ -45,24 +45,18 @@ pages:
             title: CDA
         ressourcesFHIR-struc-gen.md:
             title: FHIR
-        mappingCDA-FHIR-struc-gen.md:
-            title: Mapping CDA / FHIR
     enteteDocument.md: 
         title: Entête document
         ressourcesCDA-entete.md:
             title: CDA
         ressourcesFHIR-entete.md:
             title: FHIR
-        mappingCDA-FHIR-entete.md:
-            title: Mapping Métier/CDA/FHIR
     corpsDocument.md:
         title: Corps d'un document  
         ressourcesCDA-corps.md:
             title: CDA
         ressourcesFHIR-corps.md:
             title: FHIR
-        mappingCDA-FHIR-corps.md:
-            title: Mapping Métier/CDA/FHIR
     autres_ressources.md:
         title: Autres Ressources
         securite.md:
