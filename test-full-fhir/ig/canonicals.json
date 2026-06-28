@@ -1,0 +1,7 @@
+[{
+  "id" : "ans.document.fr.core",
+  "type" : "ImplementationGuide",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRDocumentCore"
+}]

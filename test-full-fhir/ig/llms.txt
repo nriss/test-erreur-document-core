@@ -1,0 +1,24 @@
+# ans.document.fr.core#0.1.0-snapshot: ANS IG document core(fr)
+
+## Pages
+
+* [Accueil](fr/index.md)
+* [Téléchargements et usages](fr/downloads.md)
+* [Informations sur la traduction](fr/translationinfo.md)
+* [CDA](fr/ressourcesCDA-struc-gen.md)
+* [Autres Ressources](fr/autres_ressources.md)
+* [CDA](fr/ressourcesCDA-corps.md)
+* [Résumé des artefacts](fr/artifacts.md)
+* [Sécurité](fr/securite.md)
+* [Structure générale document](fr/structureGenerale.md)
+* [Introduction](fr/introduction.md)
+* [Corps d'un document](fr/corpsDocument.md)
+* [Entête document](fr/enteteDocument.md)
+* [CDA](fr/ressourcesCDA-entete.md)
+* [Exigences spécifiques](fr/exigencesSpecifiques.md)
+
+## Resources
+
+### ImplementationGuides
+
+* [ANS IG document core](fr/ImplementationGuide-ans.document.fr.core.md)

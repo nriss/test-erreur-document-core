@@ -1,0 +1,1181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>CDA - ANS IG document core v0.1.0-snapshot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+        <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/direction-management.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"2.3"}
+    h3,h4,h5,h6{--heading-prefix:"2.3"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+<div style="display: flex; flex-direction: column;" id="family-nav">
+  <a style="scale: 0.5;" id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true">
+    <img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" style="display: block; width: 100%;" height="50"/>
+  </a>
+  <a style="scale: 0.5;" id="hl7-search-lnk" href="http://hl7.org/cda" data-no-external="true">
+    <img src="assets/images/cda-logo-www.png" alt="Visit the CDA website" style="display: block; width: 100%;" height="50"/>
+  </a>
+</div>
+  <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
+    <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
+    <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">ANS IG document core</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0-snapshot - ci-build
+
+
+
+
+
+  France (la)
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structure générale document
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="introduction.html">Introduction</a>
+      </li>
+      <li>
+        <a href="exigencesSpecifiques.html">Exigences spécifiques</a>
+      </li>
+      <li>
+        <a href="ressourcesCDA-struc-gen.html">CDA</a>
+      </li>
+      <li><a name="l206">​</a>
+        <a href="mappingCDA-FHIR-struc-gen.html">Mapping CDA / FHIR</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Entête document
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a name="l223">​</a>
+        <a href="StructureDefinition-fr-lm-header-document.html">Modèle logique métier</a>
+      </li>
+      <li>
+        <a href="ressourcesCDA-entete.html">CDA</a>
+      </li>
+      <li><a name="l235">​</a>
+        <a href="mappingCDA-FHIR-entete.html">Mapping Métier/CDA/FHIR</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Corps d'un document
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a name="l252">​</a>
+        <a href="StructureDefinition-fr-lm-corps-document.html">Modèle logique métier</a>
+      </li>
+      <li>
+        <a href="ressourcesCDA-corps.html">CDA</a>
+      </li>
+      <li><a name="l264">​</a>
+        <a href="mappingCDA-FHIR-corps.html">Mapping Métier/CDA/FHIR</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
+
+    <div><a href="../fr/ressourcesCDA-struc-gen.html"><img src="assets/images/lang-fr.png" alt="flag fr" class="flag"/>Français</a></div>
+
+  </div>
+</div>
+
+
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="structureGenerale.html"><b>Structure générale document</b></a></li><li><b>CDA</b></li>
+
+          <span style="float: var(--ig-right);">
+
+            <a href="exigencesSpecifiques.html">&lt; prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="enteteDocument.html">next &gt;</a>
+
+          </span>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">ANS IG document core - Local Development build (v0.1.0-snapshot) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/document/core/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>CDA</h2>
+  
+
+
+
+
+<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+
+<p>There is no translation page available for the current page, so it has been rendered in the default language</p>
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#standard-cda-r20" id="markdown-toc-standard-cda-r20">Standard CDA&reg; R2.0</a></li>
+  <li><a href="#structure-dun-document-cda-r20" id="markdown-toc-structure-dun-document-cda-r20">Structure d'un document CDA R2.0</a></li>
+  <li><a href="#spécifications-françaises-des-documents-cda-r20" id="markdown-toc-spécifications-françaises-des-documents-cda-r20">Spécifications françaises des documents CDA R2.0</a></li>
+  <li><a href="#conformité-dun-document-cda-r20" id="markdown-toc-conformité-dun-document-cda-r20">Conformité d'un document CDA R2.0</a></li>
+  <li><a href="#visualisation-dun-document-cda-r20" id="markdown-toc-visualisation-dun-document-cda-r20">Visualisation d'un document CDA R2.0</a></li>
+  <li><a href="#impression-des-documents-cda-r20" id="markdown-toc-impression-des-documents-cda-r20">Impression des documents CDA R2.0</a></li>
+</ul>
+
+</div>
+<h3 id="standard-cda-r20">Standard CDA&reg; R2.0</h3>
+
+<p>CDA&reg; R2.0 est un standard de dématérialisation des documents médicaux électroniques exploitant la syntaxe XML.</p>
+
+<p>Les documents au format CDA doivent respecter le standard <a href="https://hl7.org/cda/stds/online-navigation/index.html">CDA&reg; R2.0 Online Edition 2024</a> (2024-08-20 Version Normative).</p>
+
+<p>Un guide d'implémentation <a href="https://hl7.org/cda/stds/core/2.0.0-sd/">CDA&reg; R2.0 Structure Definition Format</a> produit par HL7 vient en support du standard.</p>
+
+<p>Le standard CDA R2.0, par sa conception, permet de respecter les exigences spécifiques aux documents dématérialisés énoncées au paragraphe "Exigences spécifiques aux documents dématérialisés".</p>
+
+<p>Le standard CDA R2.0 permet de coupler dans un même document :</p>
+
+<ul>
+  <li>le <strong>contenu lisible par un humain</strong>, sans médiation et présenté dans son contexte avec toute la clarté requise,</li>
+  <li>les <strong>données codées et structurées</strong> dont dérive ce contenu, directement intégrables dans les bases de données des SIS consommateurs des professionnels qui le souhaitent.</li>
+</ul>
+
+<h3 id="structure-dun-document-cda-r20">Structure d'un document CDA R2.0</h3>
+
+<p>CDA R2.0 est comme son nom l’indique une architecture dédiée aux documents cliniques. Il est possible de construire, sur le schéma <strong>CDA_extended.xsd</strong>, des modèles de documents adaptés à la plupart des spécialités médicales et médico-sociales dans la plupart des contextes d’usage.</p>
+
+<p>Un document XML conforme au standard CDA R2.0 se compose :</p>
+
+<ul>
+  <li>d'un prologue</li>
+  <li>d'une racine contenant
+    <ul>
+      <li>l'entête</li>
+      <li>le corps <code class="language-plaintext highlighter-rouge">&lt;component&gt;</code></li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Prologue</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>Racine</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd" xmlns="urn:hl7-org:v3" xmlns:pharm="urn:ihe:pharm:medication"&gt;</code></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Entête</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;realmCode code="FR"/&gt; &lt;typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/&gt; ...</code></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Corps</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;component&gt; ... &lt;/component&gt;</code></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;/ClinicalDocument&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="prologue-dun-document-cda-r20">Prologue d’un document CDA R2.0</h4>
+
+<p>Le prologue d'un document CDA R2 comporte :</p>
+
+<ul>
+  <li>Au minimum une ligne pour l'encodage du document XML</li>
+  <li>Une ligne complémentaire si une feuille de style personnalisée est couplée au document CDA (non préconisé en France).</li>
+</ul>
+
+<h5 id="encodage-du-document-xml">Encodage du document XML</h5>
+
+<p>L’encodage spécifié dans le prologue du document est obligatoirement UTF-8. C’est l’encodage par défaut pour un document XML.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+</code></pre></div></div>
+
+<p>Les systèmes producteurs et les systèmes consommateurs doivent impérativement tenir compte de cet encodage et si nécessaire, réaliser le transcodage entre le contenu du document et leur encodage local, qui peut être différent.</p>
+
+<p>La plupart des applications manipulant des documents textes (non XML) utilisent le codage ISO-8859-1 ou son successeur, le codage ISO-8859-15. Ces applications doivent donc réaliser le transcodage entre ces jeux de caractères ISO-8859 et le jeu UTF-8 des documents CDA.</p>
+
+<p>En revanche, les contenus encapsulés en base 64 dans un corps non structuré d’un document CDA (par exemple un PDF) doivent conserver leur jeu de caractères initial.</p>
+
+<h5 id="feuille-de-style-personnalisée">Feuille de style personnalisée</h5>
+
+<p>La deuxième ligne annonce que le document est accompagné de sa propre feuille de style XSLT.</p>
+
+<ul>
+  <li>Si la feuille de style est dans un document séparé :</li>
+</ul>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml-stylesheet type="text/xsl" href="./nom-feuille-de-style.XSL"?&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Si la feuille de style est dans un document CDA autoprésentable :</li>
+</ul>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml-stylesheet type="text/xsl" href="#"?&gt;</span>
+</code></pre></div></div>
+
+<h4 id="racine-dun-document-cda-r20">Racine d’un document CDA R2.0</h4>
+
+<h5 id="cda-r20">CDA R2.0</h5>
+
+<p><strong>ClinicalDocument</strong> est l’élément racine d’un document médical au format CDA R2. Cet élément déclare les différents espaces de nommage utilisés.</p>
+
+<p>Les éléments XML du document CDA appartiennent à l’espace de nommage HL7 V3, dont l’URL est "urn:hl7-org:v3".</p>
+
+<p>L’attribut <strong>"xsi:schemaLocation"</strong> qui fournit l’emplacement du schéma CDA_extended.xsd, n’est pas à renseigner. En effet, le système initiateur ne connaît pas l’emplacement du schéma sur le système cible.</p>
+
+<p>Exemple :</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ClinicalDocument</span> <span class="na">xmlns=</span><span class="s">"urn:hl7-org:v3"</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h5 id="cda-r20-signé-électroniquement">CDA R2.0 signé électroniquement</h5>
+
+<p>Dans le cas d'un document CDA R2 signé électroniquement, la signature enveloppe le document.</p>
+
+<p>L'élément racine est dans ce cas <strong>ds:Signature</strong> du standard xmldsig.</p>
+
+<p>L'élément <strong>ClinicalDocument</strong> introduisant ses propres espaces de nommage est, dans ce cas de figure, un descendant de l'élément racine <strong>ds:Signature</strong>. La validation par rapport au schéma CDA_extended.xsd et par rapport aux schématrons ne s'applique qu'au sous-arbre ClinicalDocument.</p>
+
+<p>La signature électronique du document CDA R2 est spécifiée au paragraphe <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/CI-SIS_CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.16.3.pdf">4.1 Imputabilité et intégrité du document médical</a>.</p>
+
+<h5 id="cda-r20-autoprésentable">CDA R2.0 autoprésentable</h5>
+
+<p>Dans le cas d'un document CDA, le contenu CDA et la feuille de style sont juxtaposés dans un unique document XML dont l'élément racine est <strong>xsl:stylesheet</strong>.
+L'ensemble [feuille de style + contenu] peut éventuellement être signé électroniquement, ce qui ne change pas cet élément racine.</p>
+
+<p>L'élément <strong>ClinicalDocument</strong> introduisant ses propres espaces de nommage est, dans ce cas de figure, un descendant de l'élément racine <strong>xsl:stylesheet</strong>. La validation par rapport au schéma CDA_extended.xsd et par rapport aux schématrons ne s'applique qu'au sous-arbre ClinicalDocument.</p>
+
+<h4 id="lentête-dun-document-cda-r20">L'entête d’un document CDA R2.0</h4>
+
+<p><strong>L’entête contient</strong> les informations générales et nécessaires à la gestion du document. Ces informations permettent de relier le document au contexte dans lequel il a été produit, de le classer dans les catégories adéquates et de gérer son évolution et son accessibilité dans la durée. La structure de base de l’entête est identique quel que soit le type de document et quel que soit le degré de structuration choisi. Les éléments de l’entête portent sur :</p>
+
+<ul>
+  <li><strong>La qualification du document</strong> : identifiant globalement unique, type, modèles, date de création, titre, langue, niveau de confidentialité, etc. ;</li>
+  <li><strong>La qualification de l’évènement ou des évènements documentés</strong> : code évènement, horodatage, cadre d’exercice, modalité d’exercice, lieu d’exercice, etc. ;</li>
+  <li><strong>Les participants</strong> : patient/usager, auteur, responsable, structure chargée de conservation du document, valideurs, destinataires prévus, autres participants, etc.</li>
+</ul>
+
+<h4 id="le-corps-dun-document-cda-r20">Le corps d’un document CDA R2.0</h4>
+
+<ul>
+  <li><strong>Le corps contient</strong> les informations véhiculées par le document. Ce corps peut être :</li>
+  <li><strong>Non structuré</strong> (CDA R2 niveau 1) : Le corps contient des informations non structurées (PDF ou TEXT), encodées en base 64 ;</li>
+  <li><strong>Structuré</strong> (CDA R2 niveau 3) : Le corps est organisé en structures de données XML afin de permettre les traitements informatiques.
+Plus précisément, un tel corps structuré se présente comme un ensemble hiérarchisé de sections (élément <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code>). 
+Chacune de ces sections possède un type (élément <code class="language-plaintext highlighter-rouge">&lt;code&gt;</code>), un titre (élément <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code>) et un bloc narratif (élément <code class="language-plaintext highlighter-rouge">&lt;text&gt;</code>). 
+En outre une section peut contenir des sous-sections (élément <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code>) et des entrées (élément <code class="language-plaintext highlighter-rouge">&lt;entry&gt;</code>) fournissant les données du SI producteur à l'aide desquelles a été construit le bloc narratif. Ces données sont codées et structurées, importables et intégrables dans la base de données des SI consommateurs du document.</li>
+</ul>
+
+<div style="text-align: center;">
+<img src="FormesDocumentsCDA.png" alt="Les deux formes de documents CDA" style="width: 45%; display: block; margin: 0 auto;"/>
+<p>Les deux formes de documents CDA</p>
+<p></p>
+</div>
+
+<h5 id="document-à-corps-non-structuré-cda-r2-niveau-1">Document à corps non structuré (CDA R2 niveau 1)</h5>
+
+<p>Un document à corps non structuré est produit lorsqu’il n’existe pas de modèle structuré spécifié dans le CI-SIS pour le type de document produit.</p>
+
+<p>Les informations DOIVENT être au format PDF ou TEXT. Les images (format jpeg et tiff) doivent d'abord être transformées en PDF/A-1.</p>
+
+<p>Les informations sont encodées en base 64 et encapsulées dans l’élément fils <strong>nonXMLBody/text</strong>, qui est obligatoire (cardinalités [1..1] et attribut nullFlavor interdit).</p>
+
+<p><code class="language-plaintext highlighter-rouge">ClinicalDocument/component/nonXMLBody/text</code> contient les deux attributs suivants obligatoirement présents et renseignés :</p>
+
+<ul>
+  <li>mediaType - Valeurs possibles : "application/pdf" et "text/plain"</li>
+  <li>representation – Valeur fixée à "B64".</li>
+</ul>
+
+<p>Exemple :</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;component&gt;</span>
+  <span class="nt">&lt;nonXMLBody&gt;</span>
+    <span class="nt">&lt;text</span> <span class="na">mediaType=</span><span class="s">"application/pdf"</span> <span class="na">representation=</span><span class="s">"B64"</span><span class="nt">&gt;</span>JVBERi0xLjUN… <span class="nt">&lt;/text&gt;</span>
+  <span class="nt">&lt;/nonXMLBody&gt;</span>
+<span class="nt">&lt;/component&gt;</span>
+</code></pre></div></div>
+
+<p>Si le contenu médical est dans une langue différente du français, annoncé par l’entête du document <code class="language-plaintext highlighter-rouge">(ClinicalDocument/languageCode/@code=”fr-FR”)</code>, alors l’élément ClinicalDocument/component/nonXMLBody/languageCode doit être présent et doit préciser la langue utilisée dans le contenu encapsulé.</p>
+
+<h5 id="document-à-corps-structuré-cda-r2-niveau-3">Document à corps structuré (CDA R2 niveau 3)</h5>
+
+<p>Un document à corps structuré DOIT être conforme à son modèle défini dans le volet de la couche Métier du CI-SIS qui précise les exigences syntaxiques (structure) et sémantiques (terminologies et jeux de valeurs pour coder les données) de ce document.</p>
+
+<p>Les sections de 1er niveau sont dans l’élément fils <strong>structuredBody</strong>.</p>
+
+<p>Exemple :</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;component&gt;</span>
+  <span class="nt">&lt;structuredBody&gt;</span>
+    <span class="c">&lt;!-- Section A --&gt;</span>
+    <span class="nt">&lt;component&gt;</span>
+      <span class="nt">&lt;section&gt;</span>
+      …
+      <span class="nt">&lt;/section&gt;</span>
+    <span class="c">&lt;!-- Section B --&gt;</span>
+    <span class="nt">&lt;component&gt;</span>
+      <span class="nt">&lt;section&gt;</span>
+      …
+      <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;/component&gt;</span>
+  <span class="nt">&lt;/structuredBody&gt;</span>
+<span class="nt">&lt;/component&gt;</span>
+</code></pre></div></div>
+
+<h3 id="spécifications-françaises-des-documents-cda-r20">Spécifications françaises des documents CDA R2.0</h3>
+
+<p>Les spécifications françaises des documents CDA définies dans le CI-SIS :</p>
+
+<ul>
+  <li>s'appuient sur le standard CDA R2.0,</li>
+  <li>s'appuient sur les profils internationaux IHE lorsqu'ils existent,</li>
+  <li>portent les exigences complémentaires et spécifiques au contexte français.</li>
+</ul>
+
+<h4 id="spécifications-françaises-de-lentête-des-documents-cda-r20-structuration-minimale">Spécifications françaises de l'entête des documents CDA R2.0 (Structuration minimale)</h4>
+
+<p>Les spécifications françaises de l'entête d'un document CDA du CI-SIS sont conformes aux spécifications internationales des données de l’entête d’un document médical décrites dans le Profil IHE XDS-SD du domaine IHE IT Infrastructure (ITI).</p>
+
+<p>Elles sont communes aux CDA R2 niveau 1 (corps non structuré) et aux CDA R2 niveau 3 (corps structuré).</p>
+
+<p>Elles portent essentiellement sur :</p>
+
+<ul>
+  <li>l'identification du patient,</li>
+  <li>l'identification des professionnels et des structures référencés dans le document,</li>
+  <li>des sur-contraintes sur le format de l'identifiant du document pour le partage dans le DMP,</li>
+  <li>des sur-contraintes sur les cardinalités des éléments de l'entête : par exemple pour améliorer la gestion des versions d'un même document les éléments setId et versionNumber sont obligatoires en France et facultatifs à l'international.</li>
+  <li>les données utilisées dans les métadonnées pour le partage et l'échange.</li>
+</ul>
+
+<h4 id="spécifications-françaises-des-documents-cda-r20-structurés-volets-de-contenu-de-la-couche-métier">Spécifications françaises des documents CDA R2.0 structurés (Volets de contenu de la couche Métier)</h4>
+
+<p>Les modèles de documents structurés français sont décrits dans des volets de contenu de la couche Métier.</p>
+
+<p>Ils précisent les contraintes spécifiques de l'entête (modèle du document, type de document, participants, etc…).</p>
+
+<p>Ils définissent les sections et entrées à utiliser et les terminologies ou jeux de valeurs à utiliser pour les données codées.</p>
+
+<p>Les volets structurés de la couche Métier, s'appuient sur les modèles de contenus (sections et d'entrées), communs à l'ensemble des documents.</p>
+
+<h4 id="spécifications-françaises-des-modèles-de-contenus-sections-et-entrées-cda">Spécifications françaises des modèles de contenus (sections et entrées CDA)</h4>
+
+<p>La majorité des modèles de contenu (sections et entrées) sont issus des spécifications IHE :</p>
+
+<ul>
+  <li>IHE PCC dédié à la coordination des soins,</li>
+  <li>IHE PaLM pour les examens biologiques et anatomo-pathologiques,</li>
+  <li>IHE PHARM pour le médicament,</li>
+  <li>IHE QRPH pour les données liées à la recherche clinique et à la santé publique.</li>
+</ul>
+
+<p>Lorsqu’aucun modèle n’est identifié dans les spécifications IHE pour répondre à un besoin spécifique du contexte français, un modèle spécifique est alors créé pour le contexte français.</p>
+
+<h5 id="structures-des-sections">Structures des sections</h5>
+
+<p>Les sections sont les éléments qui composent le corps structuré d'un document CDA.</p>
+
+<p>On distingue deux types de sections :</p>
+
+<h6 id="les-sections-atomiques">Les sections atomiques</h6>
+
+<p>Une section atomique ne contient pas de sous-section.</p>
+
+<p>Une section atomique contient zéro, une ou plusieurs entrées.</p>
+
+<h6 id="les-sections-composites">Les sections composites</h6>
+
+<p>Une section composite est composée d’autres sections.</p>
+
+<p>Une section composite ne comporte pas d’entrée, ni de bloc narratif (pas d’élément text) mais seulement une liste de sous-sections.</p>
+
+<h6 id="structure-générale-dune-section">Structure générale d’une section</h6>
+
+<p>La structure générale d’une section est la suivante :</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;component&gt;</span>
+   <span class="nt">&lt;section&gt;</span>
+   <span class="c">&lt;!-- ① Déclaration(s) de conformité de la section (obligatoire) --&gt;</span>
+   <span class="nt">&lt;templateId</span> <span class="na">root=</span><span class="s">"…"</span><span class="nt">/&gt;</span>
+   <span class="c">&lt;!-- ② Identifiant unique de la section (optionnel) --&gt;</span>
+     <span class="nt">&lt;id</span> <span class="na">root=</span><span class="s">" "</span> <span class="na">extension=</span><span class="s">" "</span><span class="nt">/&gt;</span>
+   <span class="c">&lt;!-- ③ Code et libellé LOINC de la section (obligatoire) --&gt;</span>
+     <span class="nt">&lt;code</span> <span class="na">code=</span><span class="s">" "</span> <span class="na">displayName=</span><span class="s">""</span> <span class="na">codeSystem=</span><span class="s">"2.16.840.1.113883.6.1"</span> <span class="na">codeSystemName=</span><span class="s">"LOINC"</span><span class="nt">/&gt;</span>
+   <span class="c">&lt;!-- ④ Titre de la section --&gt;</span>
+     <span class="nt">&lt;title&gt;</span>titre de la section<span class="nt">&lt;/title&gt;</span>
+   <span class="c">&lt;!-- ⑤ Bloc narratif de la section destiné au lecteur (obligatoire) --&gt;</span>
+     <span class="nt">&lt;text&gt;</span> Compte-rendu de consultation... <span class="nt">&lt;/text&gt;</span>
+   <span class="c">&lt;!-- ⑥ Entrées de la section --&gt;</span>
+     <span class="nt">&lt;entry&gt;</span>
+       <span class="nt">&lt;templateId</span> <span class="na">root=</span><span class="s">"…"</span><span class="nt">/&gt;</span>
+          :
+     <span class="nt">&lt;/entry&gt;</span>
+      :
+   <span class="c">&lt;!-- ⑦ Sous-sections de la section --&gt;</span>
+     <span class="nt">&lt;component&gt;</span>
+       <span class="nt">&lt;section&gt;</span>
+         :
+       <span class="nt">&lt;/section&gt;</span>
+     <span class="nt">&lt;/component&gt;</span>
+      :
+   <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/component&gt;</span>
+</code></pre></div></div>
+
+<p><strong><span style="color: green;">①</span> Déclaration(s) de conformité de la section</strong>.</p>
+
+<p>Une section comporte une ou plusieurs déclarations de conformité obligatoires, chacune se présentant sous la forme d’un élément templateId dont l’attribut root contient l’OID du modèle concerné.</p>
+
+<p><strong><span style="color: green;">②</span> Identifiant unique de la section (optionnel)</strong>.</p>
+
+<p>Dans un certain nombre de cas, un numéro unique d'identifiant, attaché à une section ou à une entrée, est requis. Cet élément est un UID attribué par l'application LPS.</p>
+
+<p>Il s'agit :</p>
+
+<ul>
+  <li>
+    <p>Soit d'un OID et dans ce cas les attributs de l'élément <code class="language-plaintext highlighter-rouge">&lt;id&gt;</code> prennent les valeurs suivantes :</p>
+
+    <p>→ root: OID du document</p>
+
+    <p>→ extension: numéro d'identifiant de la section ou de l'entrée affecté par le LPS</p>
+
+    <p>Exemple <strong><code class="language-plaintext highlighter-rouge">&lt;id root="OID du document' extension='id attribué par le LPS/&gt;</code></strong></p>
+  </li>
+  <li>
+    <p>Soit d'un UUID dans le cas où ces éléments viendraient à manquer. Dans ce cas cet identifiant est affecté à l'attribut root et l'attribut extension sera omis.</p>
+
+    <p>Exemple <strong><code class="language-plaintext highlighter-rouge">&lt;id root=2BFB4077-C831-4C6E-8BBD-7368A6130182/&gt;</code></strong></p>
+  </li>
+</ul>
+
+<p>Cet identifiant unique peut être utilisé comme référence dans une entrée FR-reference-interne.</p>
+
+<p><strong><span style="color: green;">⑤</span> Bloc narratif de la section</strong></p>
+
+<p>Le bloc narratif est obligatoire dans les sections atomiques.</p>
+
+<p>Ce bloc narratif contient le texte destiné au lecteur. Il a valeur de référence légale.</p>
+
+<p>La mise en forme du bloc narratif (contraintes de présentation) n’est pas spécifiée dans le présent volet. Ces contraintes de présentation sont, le cas échéant, précisées par les volets de contenus métiers.</p>
+
+<p><strong><span style="color: green;">⑥</span> Entrée(s) de la section lorsque la section n’est pas de type narratif pur</strong>.</p>
+
+<p>Chaque entrée contient les données codées destinées au SIS consommateur.</p>
+
+<p>Chaque entrée se conforme à un modèle dont l’OID est cité dans l’élément ⑥ templateId de l’entrée.</p>
+
+<p><strong><span style="color: green;">⑦</span> Sous-sections</strong></p>
+
+<p>Une section composite peut contenir un certain nombre d’autres sections.</p>
+
+<h5 id="description-des-personnes-et-des-structures-dans-les-sections-et-entrées">Description des personnes et des structures dans les sections et entrées</h5>
+
+<p>La norme CDA permet d’indiquer de façon optionnelle la participation d’acteurs au niveau des sections et des entrées d’un document CDA structuré. Dans ce cas, ils remplacent les acteurs décrits au niveau supérieur.</p>
+
+<p>Chaque entrée d'un document CDA peut avoir un (ou des) acteur(s). Si l'entrée ne contient pas d’acteur, les acteurs de l’entrée sont ceux indiqués dans la section. Si la section ne contient pas d’acteur, les acteurs de la section (et de l’entrée) sont les acteurs du document. C’est le principe de propagation du contexte, qui est une caractéristique du RIM HL7, et qui part du document vers les sections, sous-sections, entrées et sous-entrées emboitées.</p>
+
+<p><strong>Acteurs possibles dans les sections</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Acteur</th>
+      <th>Card.</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>author</td>
+      <td>[0..*]</td>
+      <td>Un élément <code class="language-plaintext highlighter-rouge">&lt;author&gt;</code> dans une section permet de décrire la participation d’un auteur (PS, dispositif, patient) à l’élaboration des données de la section. Les auteurs indiqués dans une section CDA remplacent les auteurs indiqués dans l'entête CDA.</td>
+    </tr>
+    <tr>
+      <td>informant</td>
+      <td>[0..*]</td>
+      <td>Un élément <code class="language-plaintext highlighter-rouge">&lt;informant&gt;</code> dans une section permet de décrire un PS, un ES, le patient lui-même ou une autre personne non PS ayant fourni des informations concernant les données de la section (rôle d’informateur). Les informateurs indiqués dans une section CDA remplacent les informateurs indiqués dans l'entête CDA.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Acteurs possibles dans les entrées</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Balise</th>
+      <th>Card.</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>performer</td>
+      <td>[0..*]</td>
+      <td>Un élément <code class="language-plaintext highlighter-rouge">&lt;performer&gt;</code> dans une entrée permet de décrire la personne ayant exécuté l’acte décrit par l’entrée. Les exécutants indiqués dans une entrée CDA remplacent les exécutants indiqués dans la section CDA ou propagés de l'entête CDA. L’exécutant n’est pas toujours le participant principal responsable de l’acte. <em>Par exemple, un interne en chirurgie est un exécutant qui opère sous la supervision du chirurgien responsable de l’acte.</em></td>
+    </tr>
+    <tr>
+      <td>author</td>
+      <td>[0..*]</td>
+      <td>Un élément <code class="language-plaintext highlighter-rouge">&lt;author&gt;</code> dans une entrée permet de décrire la participation d’un auteur (PS, dispositif, patient) à l’élaboration des données de l’entrée. Les auteurs indiqués dans une entrée CDA remplacent les auteurs indiqués dans la section CDA ou propagés de l'entête CDA.</td>
+    </tr>
+    <tr>
+      <td>informant</td>
+      <td>[0..*]</td>
+      <td>Un élément <code class="language-plaintext highlighter-rouge">&lt;informant&gt;</code> dans une entrée permet de décrire un PS, un ES, le patient lui-même ou une autre personne non PS ayant fourni des informations concernant les données de l’entrée (rôle d’informateur). Les informateurs indiqués dans une entrée CDA remplacent les informateurs indiqués dans la section CDA ou propagés de l'entête CDA.</td>
+    </tr>
+    <tr>
+      <td>participant</td>
+      <td>[0..*]</td>
+      <td>Un élément <code class="language-plaintext highlighter-rouge">&lt;participant&gt;</code> dans une entrée permet de décrire un PS ou un ES impliqué dans l’acte décrit par l’entrée et dont le rôle n’a pas été mentionné ailleurs (dans la section ou dans l’entête). Le participant peut être attribué à une entrée du CDA et se propage aux entrées imbriquées.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>La structure des éléments <code class="language-plaintext highlighter-rouge">&lt;author&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;informant&gt;</code> et <code class="language-plaintext highlighter-rouge">&lt;participant&gt;</code> est la même dans l'entête et dans le corps d’un document CDA.</p>
+
+<p>La structure de l’élément <code class="language-plaintext highlighter-rouge">&lt;performer&gt;</code> utilisé dans l'entête est différente de la structure de l'élément <code class="language-plaintext highlighter-rouge">&lt;performer&gt;</code> utilisé dans le corps d’un document CDA.</p>
+
+<h5 id="éléments-narratifs-référencés-dans-les-entrées">Éléments narratifs référencés dans les entrées</h5>
+
+<p>Les règles de syntaxe de CDA permettent, pour une section donnée, de présenter l'information médicale sous un format texte et de l’accompagner, ou pas, de la même information codée.</p>
+
+<p>La codification des données permet une meilleure intégration et exploitation de ces données médicales par les autres systèmes d'information consommateurs.</p>
+
+<h6 id="référencement-dune-information-codée">Référencement d'une information codée</h6>
+
+<p>CDA permet de référencer des éléments du bloc narratif d'une section à partir des entrées de cette section.</p>
+
+<p>Ce référencement se fait :</p>
+
+<ul>
+  <li>Dans le bloc narratif :
+    <ul>
+      <li>La balise <code class="language-plaintext highlighter-rouge">&lt;content&gt;</code>, élément optionnel du bloc narratif de la section, permet de délimiter la zone de texte à référencer.</li>
+      <li>L'attribut <code class="language-plaintext highlighter-rouge">ID</code> de l'élément <code class="language-plaintext highlighter-rouge">&lt;content&gt;</code> est affecté d'un index de valeur unique dans le document, qui permet le référencement de la zone balisée.</li>
+    </ul>
+  </li>
+  <li>Dans l’<code class="language-plaintext highlighter-rouge">entry</code> : Le composant <code class="language-plaintext highlighter-rouge">&lt;originalText/reference&gt;</code> permet de référencer explicitement la zone du bloc narratif référencée par <code class="language-plaintext highlighter-rouge">&lt;content&gt;</code> en pointant sur la valeur de l'index <code class="language-plaintext highlighter-rouge">ID</code> associé.</li>
+</ul>
+
+<div style="text-align: center;">
+<img src="ExempleRéférencementElémentCodé.png" alt="Exemple de référencement d'une zone de texte à partir d'un élément codé" style="width: 45%; display: block; margin: 0 auto;"/>
+<p>Exemple de référencement d'une zone de texte à partir d'un élément codé</p>
+<p></p>
+</div>
+
+<h6 id="référencement-dune-information-non-codée">Référencement d'une information non codée</h6>
+
+<p>Dans certains cas, pour les entrées codées, si le code d'une donnée n'est pas disponible, l'information peut être portée par la partie narrative (élément <code class="language-plaintext highlighter-rouge">&lt;text&gt;</code>) et l'entrée codée portera une référence vers la partie narrative.</p>
+
+<p>Par exemple : dans l'entrée FR-Probleme, où l'élément <code class="language-plaintext highlighter-rouge">&lt;value&gt;</code> attend un élément codé :</p>
+
+<ul>
+  <li>L'attribut de l'élément <code class="language-plaintext highlighter-rouge">&lt;value&gt;</code> relatif au type de donnée restera xsi:type='CD',</li>
+  <li>Les attributs de l'élément <code class="language-plaintext highlighter-rouge">&lt;value&gt;</code> relatifs au codage de la donnée code, displayName, codeSystem, codeSystemName ne seront pas présents,</li>
+  <li>Un élément <code class="language-plaintext highlighter-rouge">&lt;originalText&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;reference&gt;</code> indiquera la référence de l'information dans la partie narrative (élément <code class="language-plaintext highlighter-rouge">&lt;text&gt;</code>) comme décrit ci-dessus.</li>
+</ul>
+
+<div style="text-align: center;">
+<img src="ExempleRéférencementElémentNonCodé.png" alt="Exemple de référencement d'une zone de texte à partir d'un élément non codé" style="width: 45%; display: block; margin: 0 auto;"/>
+<p>Exemple de référencement d'une zone de texte à partir d'un élément non codé</p>
+<p></p>
+</div>
+
+<h5 id="lentryrelationship--relation-entre-2-éléments">L’entryRelationship : relation entre 2 éléments</h5>
+
+<p><code class="language-plaintext highlighter-rouge">entryRelationship</code> est un élément qui met en relation deux éléments de type Clinical statements (<code class="language-plaintext highlighter-rouge">act</code>, <code class="language-plaintext highlighter-rouge">observation</code>, <code class="language-plaintext highlighter-rouge">procedure</code>, etc.).
+La nature de cette relation est définie par deux attributs, <code class="language-plaintext highlighter-rouge">typeCode</code> et <code class="language-plaintext highlighter-rouge">inversionInd</code> :</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">typeCode</code> indique en quoi consiste cette relation</li>
+  <li><code class="language-plaintext highlighter-rouge">inversionInd</code> permet d’inverser cette relation.</li>
+</ul>
+
+<p>On considère que l’élément SOURCE est l'élément contenant la relation entryRelationship et l’élément TARGET est l'élément contenu dans l’entryRelationship :</p>
+
+<div style="text-align: center;">
+<img src="EntryRelationshipRelationEntre2Eléments.png" alt="EntryRelationship : Relation entre 2 éléments" style="width: 45%; display: block; margin: 0 auto;"/>
+</div>
+
+<h6 id="lattribut-typecode-dun-entryrelationship">L’attribut typeCode d’un entryRelationship</h6>
+
+<p>Les valeurs utilisées pour caractériser un élément <code class="language-plaintext highlighter-rouge">entryRelationship</code> avec l'attribut <code class="language-plaintext highlighter-rouge">typeCode</code> sont :</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>XRCPT</td>
+      <td>SOURCE résume TARGET</td>
+    </tr>
+    <tr>
+      <td>COMP</td>
+      <td>TARGET est un composant de SOURCE</td>
+    </tr>
+    <tr>
+      <td>RSON</td>
+      <td>TARGET est la raison de SOURCE</td>
+    </tr>
+    <tr>
+      <td>SPRT</td>
+      <td>SOURCE est étayée par TARGET</td>
+    </tr>
+    <tr>
+      <td>CAUS</td>
+      <td>SOURCE cause l'observation de TARGET</td>
+    </tr>
+    <tr>
+      <td>GEVL</td>
+      <td>L’observation de SOURCE évalue le but de TARGET</td>
+    </tr>
+    <tr>
+      <td>MFST</td>
+      <td>SOURCE est la manifestation de TARGET</td>
+    </tr>
+    <tr>
+      <td>REFR</td>
+      <td>SOURCE se réfère à TARGET</td>
+    </tr>
+    <tr>
+      <td>SAS</td>
+      <td>SOURCE débute après TARGET</td>
+    </tr>
+    <tr>
+      <td>SUBJ</td>
+      <td>TARGET est le sujet de SOURCE</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="lattribut-inversionind-dun-entryrelationship">L’attribut inversionInd d’un entryRelationship</h6>
+
+<p>L'attribut <code class="language-plaintext highlighter-rouge">inversionInd</code> (valeur booléenne) permet d’inverser la relation décrite par <code class="language-plaintext highlighter-rouge">typeCode</code>. Si l’on omet l’attribut <code class="language-plaintext highlighter-rouge">inversionInd</code>, alors on considère que <code class="language-plaintext highlighter-rouge">inversionInd="false"</code> (valeur par défaut).</p>
+
+<p>Exemples :</p>
+
+<ul>
+  <li>si <code class="language-plaintext highlighter-rouge">typeCode="RSON"</code> et <code class="language-plaintext highlighter-rouge">inversionInd="false"</code>, alors TARGET est la raison de SOURCE.</li>
+  <li>si <code class="language-plaintext highlighter-rouge">typeCode="RSON"</code> et <code class="language-plaintext highlighter-rouge">inversionInd="true"</code>, alors SOURCE est la raison de TARGET.</li>
+</ul>
+
+<h5 id="nullflavor">nullFlavor</h5>
+
+<p>Lorsqu’une donnée est obligatoire mais que l’on ne connaît pas la valeur de cette donnée lors de l’élaboration du document, il est possible d’utiliser un attribut <code class="language-plaintext highlighter-rouge">nullFlavor</code> qui permet d'indiquer la raison pour laquelle la valeur ne peut être fournie.
+Par exemple, la date de début d’un problème est obligatoire (cardinalité [1..1]) mais le médecin ne la connait pas au moment de la rédaction du document. Dans ce cas, on peut utiliser un nullFlavor :
+<code class="language-plaintext highlighter-rouge">&lt;low nullFlavor='UNK'&gt;</code>
+Dans certains cas, l'utilisation de la valeur nullFlavor n’est pas autorisée pour obliger à fournir une valeur ayant une signification précise dans le contexte. Dans ce cas, les spécifications doivent préciser que l’utilisation du nullFLavor est interdite.</p>
+
+<p>L’utilisation d’un nullFlavor n’est bien sûr utile que pour un élément obligatoire. Pour un élément facultatif, si la valeur n’est pas connue, il vaut mieux ne pas mettre l’élément.</p>
+
+<p>Les valeurs les plus courantes pour nullFlavor sont les suivantes :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Code</strong></th>
+      <th><strong>Libellé</strong></th>
+      <th><strong>Définition</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NI</td>
+      <td>pas d’information</td>
+      <td>Valeur absente sans autre information.</td>
+    </tr>
+    <tr>
+      <td>OTH</td>
+      <td>autre valeur</td>
+      <td>Valeur existante, mais non prévue dans la liste proposée pour le codage de l’élément.</td>
+    </tr>
+    <tr>
+      <td>NINF</td>
+      <td>borne inférieure infinie</td>
+      <td>Borne inférieure infinie (pour des valeurs numériques PQ ou REAL).</td>
+    </tr>
+    <tr>
+      <td>PINF</td>
+      <td>borne supérieure infinie</td>
+      <td>Borne supérieure infinie (pour des valeurs numériques PQ ou REAL).</td>
+    </tr>
+    <tr>
+      <td>MSK</td>
+      <td>valeur masquée</td>
+      <td>Valeur masquée.</td>
+    </tr>
+    <tr>
+      <td>NA</td>
+      <td>pas de valeur applicable</td>
+      <td>Pas de valeur applicable dans ce contexte (par exemple, dernière période menstruelle pour un homme).</td>
+    </tr>
+    <tr>
+      <td>UNK</td>
+      <td>valeur inconnue</td>
+      <td>Valeur inconnue.</td>
+    </tr>
+    <tr>
+      <td>ASKU</td>
+      <td>demandé mais valeur inconnue</td>
+      <td>Demandé mais valeur inconnue (par exemple, information demandée au patient mais il ne savait pas).</td>
+    </tr>
+    <tr>
+      <td>NAV</td>
+      <td>valeur temporairement indisponible</td>
+      <td>Valeur temporairement indisponible.</td>
+    </tr>
+    <tr>
+      <td>NASK</td>
+      <td>non demandé</td>
+      <td>Information non demandée.</td>
+    </tr>
+    <tr>
+      <td>TRC</td>
+      <td>trace non quantifiable</td>
+      <td>Quantité présente à l’état de trace non quantifiable (pour des valeurs de type PQ ou REAL).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="conformité-dun-document-cda-r20">Conformité d'un document CDA R2.0</h3>
+
+<p>Les documents au format CDA R2.0 définis dans le CI-SIS sont des documents XML qui doivent être conformes :</p>
+
+<ul>
+  <li>au schéma <strong>CDA_extended.xsd</strong></li>
+  <li>aux exigences françaises de l'entête</li>
+  <li>aux exigences d'un modèle spécifique défini dans un volet du CI-SIS (pour les documents structurés)</li>
+</ul>
+
+<h4 id="conformité-de-la-structure-cda-r20-par-rapport-au-schéma-cda_extendedxsd">Conformité de la structure CDA R2.0 par rapport au schéma CDA_extended.xsd</h4>
+
+<p>Les documents au format CDA R2.0 définis dans le CI-SIS doivent être valides par rapport au schéma <strong>CDA_extended.xsd</strong> qui regroupe le schéma CDA.xsd (partie intégrante de la spécification CDA R2.0) et les extensions internationales produites pour des domaines particuliers (ihelab.xsd, SDTC.xsd, POCD_MT000040_extended_pharmacy.xsd et DICOM.xsd).</p>
+
+<h4 id="conformité-aux-exigences-françaises-de-lentête">Conformité aux exigences françaises de l'entête</h4>
+
+<p>Les documents au format CDA R2.0 définis dans le CI-SIS doivent être conformes aux exigences françaises de l'entête (Structuration minimale). Ces spécifications sont communes à l'ensemble des documents CDA produits en France.</p>
+
+<h4 id="conformité-à-un-modèle-de-document-spécifique-défini-dans-le-ci-sis">Conformité à un modèle de document spécifique défini dans le CI-SIS</h4>
+
+<p>Un document CDA R2.0 de niveau 3 (structuré) dont le modèle est défini dans le CI-SIS doit être conforme aux spécifications syntaxiques et sémantiques de ce modèle (Volet de contenus de la couche Métier) :</p>
+
+<ul>
+  <li>Les spécifications syntaxiques précisent la structure du document et des éléments XML qui le composent et la cardinalité de chacun des éléments (nombre d’occurrences exigées ou autorisées).</li>
+  <li>Les spécifications sémantiques précisent le vocabulaire à utiliser : soit une terminologie complète, soit un jeu de valeurs (liste finie de valeurs issues d’une ou plusieurs terminologies).</li>
+</ul>
+
+<h4 id="convention-sur-le-traitement-des-éléments-hors-modèle">Convention sur le traitement des éléments hors modèle</h4>
+
+<p>Une application productrice est autorisée à ajouter dans l’en-tête et dans le corps d’un document qu’elle produit des éléments non prévus dans le modèle dont se réclame le document, à condition que ces éléments restent conformes au standard CDA R2.0.</p>
+
+<p>Une application consommatrice de document n’est pas tenue de traiter les éléments non définis dans le modèle, et dans le cas où elle ne les comprend pas, elle doit les ignorer.</p>
+
+<p>En d’autres termes, ce n’est pas une erreur de mettre dans un document plus d’éléments que n’en spécifie le modèle ; en revanche c’est une erreur de rejeter un tel document.</p>
+
+<p>Cette convention préserve la capacité aux implémentations d’apporter de la valeur ajoutée par rapport aux modèles.</p>
+
+<p>Elle protège en outre la compatibilité ascendante, en permettant que des versions ultérieures d’un modèle apportant des éléments nouveaux, restent compatibles avec des implémentations qui ne connaîtraient qu’une version plus ancienne du modèle.</p>
+
+<p>Cette convention est identique à celle définie par les <strong>cadres techniques IHE</strong> spécifiant des modèles de contenus. Elle est énoncée dans la section 2.3.1 du volume 2 du <a href="https://www.ihe.net/resources/technical_frameworks/#pcc">cadre technique IHE PCC</a>.</p>
+
+<h4 id="vérification-de-la-conformité-dun-document-cda-r20">Vérification de la conformité d'un document CDA R2.0</h4>
+
+<p>L'ANS met à disposition des outils permettant de vérifier la conformité des documents CDA R2.0.</p>
+
+<h5 id="loutil-testcontenucda">L'outil testContenuCDA</h5>
+
+<p>L'outil testContenuCDA à télécharger sur <a href="https://github.com/ansforge/TestContenuCDA-3-0/">https://github.com/ansforge/TestContenuCDA-3-0/</a>.</p>
+
+<p>Il permet de vérifier <strong>en local</strong> la conformité d'un document CDA R2.0 aux spécifications françaises du CI-SIS.</p>
+
+<h5 id="lespace-de-tests">L'espace de tests</h5>
+
+<p>L’espace de test est composé de deux outils :</p>
+
+<ul>
+  <li><strong>EVSClient</strong>, qui permet de vérifier la conformité : des documents CDA et FHIR, des archives IHE_XDM.ZIP utilisées pour les échanges, des ressources FHIR…</li>
+  <li><strong>Gazelle Test Management</strong>, qui permet de tester des scénarios complets avec plusieurs interactions d’échanges de données.</li>
+</ul>
+
+<p>Ces outils sont accessibles <strong>en ligne</strong> sur le site <a href="https://interop.esante.gouv.fr/">https://interop.esante.gouv.fr/</a> et notamment utilisés lors des Projectathons organisés par l’ANS pour les éditeurs.</p>
+
+<p>Attention : l'espace de tests ne doit pas être utilisé pour vérifier la conformité de documents de production (produits pour un patient réel).</p>
+
+<h5 id="les-schématrons">Les schématrons</h5>
+
+<p>La vérification de la conformité d'un document CDA R2.0 se fait à l'aide de schématrons.</p>
+
+<p>Les outils testContenuCDA et EVS Client permette de :</p>
+
+<ol>
+  <li>Sélectionner le document CDA à vérifier,</li>
+  <li>Sélectionner le schématron à utiliser pour la vérification.</li>
+</ol>
+
+<p><strong>Pour vérifier la conformité d'un document CDA R2.0 de niveau 1</strong> (corps non structuré), il faut utiliser le schématron "Structuration minimale".</p>
+
+<p>Ce schématron peut aussi être utilisé pour vérifier l'entête des documents CDA R2.0 de niveau 3 (à corps structuré).</p>
+
+<p><strong>Pour vérifier la conformité d'un document CDA R2.0 de niveau 3</strong> (à corps structuré), il faut utiliser le schématron " spécifique au modèle du document.</p>
+
+<p>Par exemple : le schématron IPS-FR_2024.</p>
+
+<h3 id="visualisation-dun-document-cda-r20">Visualisation d'un document CDA R2.0</h3>
+
+<p>Les documents au format standard CDA R2.0 sont visualisables au travers de l’IHM des logiciels de professionnels des secteurs sanitaire et médico-social ou des logiciels pour les patients.</p>
+
+<p>Si le producteur du document CDA souhaite qu'une présentation spécifique soir respectée lors de la visualisation de son document, il peut <strong>intégrer une copie PDF du document dans le document CDA</strong>.</p>
+
+<p>Le couplage d'une feuille de style personnalisée fournie par le producteur du document CDA est abandonné au profit de l'intégration d'une copie PDF dans le CDA. Cette solution de couplage d'une feuille de style personnalisée n'est donc pas présentée dans ce guide d'implémentation.</p>
+
+<h4 id="document-cda-contenant-une-copie-pdf-du-document">Document CDA contenant une copie PDF du document</h4>
+
+<p>Certains documents CDA R2 N3 peuvent contenir une section spécifique FR-Document-PDF-copie <span style="color: green;">(1.2.250.1.213.1.1.2.243)</span> contenant une copie PDF du document.</p>
+
+<p>Cette solution est utilisée pour permettre de toujours avoir une copie ayant la même mise en forme que le document remis au patient. Cette solution est notamment préconisée pour les CR d'examens de biologie médicale et les Prescriptions.</p>
+
+<p>Dans ce cas, les systèmes consommateurs doivent en priorité afficher le document PDF contenu dans cette section FR-Document-PDF-copie <span style="color: green;">(1.2.250.1.213.1.1.2.243)</span>.</p>
+
+<p>A la demande de l'utilisateur, le système consommateur doit permettre de consulter le document CDA R2 N3 (voir paragraphe suivant "Visualisation avec une feuille de style (Transformation XSLT)").</p>
+
+<h4 id="visualisation-avec-une-feuille-de-style-transformation-xslt">Visualisation avec une feuille de style (Transformation XSLT)</h4>
+
+<p>Le système consommateur (logiciel métier, interfaces web des SIS) porte la responsabilité d’offrir un rendu correct pour la visualisation des documents de santé : visualisation de l’entête CDA et des parties narratives du corps du document.
+Un document CDA étant un document XML, la présentation visuelle de ce document DOIT être pilotée par une feuille de style XSLT.
+Le système consommateur est libre d'utiliser sa propre feuille de style ou la feuille de style <strong>CDA-FO.xsl</strong> publiée à titre d'exemple dans <strong>testContenuCDA</strong>.</p>
+
+<h3 id="impression-des-documents-cda-r20">Impression des documents CDA R2.0</h3>
+
+<p>Si le document CDA contient une copie PDF du document, c'est le PDF qui DOIT être imprimé.</p>
+
+<p>Sinon, l’impression du document au format CDA DOIT être réalisée par la transformation du document CDA en html (par la feuille de style XSLT) puis la transformation du fichier html obtenu en PDF/A-1.</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/flags.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container" data-fhir="generated">    <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:var(--ig-left);">&nbsp;
+
+                <a href="exigencesSpecifiques.html">&lt; prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:var(--ig-right);">&nbsp;
+
+                <a href="enteteDocument.html">next &gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
+          Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-06-28 07:15:00 +0000">
+    2026-06-28
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/document/core/history.html" target="_blank">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/documentation" target="_blank">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/interop-IG-document-core/issues/new" target="_blank">New Issue</a>
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+
+    <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+    <!-- Fin ajout ANS -->
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+    <!-- AJOUT ANS -->
+
+<footer role="contentinfo" class="footer footer-principal">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+            <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+                <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li> -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+      <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+{
+  "date" : "Sun, 28 Jun, 2026 07:15:30 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-ans.document.fr.core.json",
+    "size" : 5059,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 47,
+      "length" : 76
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 48,
+      "length" : 21
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 48,
+      "length" : 128
+    },
+    {
+      "activity" : "validate",
+      "start" : 48,
+      "length" : 8601
+    },
+    {
+      "activity" : "translate",
+      "start" : 57,
+      "length" : 46
+    },
+    {
+      "activity" : "generate1",
+      "start" : 57,
+      "length" : 165
+    },
+    {
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 186
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 81,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 98,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 2571,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/data/features.yml",
+    "size" : 172
+  },
+  {
+    "name" : "/input/pagecontent/securite.md",
+    "size" : 900,
+    "processes" : [{
+      "activity" : "scan",
+      "start" : 48,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/structureGenerale.md",
+    "size" : 138
+  },
+  {
+    "name" : "/input/pagecontent/autres_ressources.md",
+    "size" : 152,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/StructureDefinition-Auteur-intro.md",
+    "size" : 788
+  },
+  {
+    "name" : "/input/pagecontent/enteteDocument.md",
+    "size" : 197,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/ressourcesCDA-entete.md",
+    "size" : 8988,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/exigencesSpecifiques.md",
+    "size" : 5319,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/ressourcesCDA-corps.md",
+    "size" : 332,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/ressourcesCDA-struc-gen.md",
+    "size" : 34121,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/introduction.md",
+    "size" : 895,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/downloads.md",
+    "size" : 1042
+  },
+  {
+    "name" : "/input/pagecontent/translationinfo.md",
+    "size" : 59,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 4614,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/corpsDocument.md",
+    "size" : 196
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140
+  },
+  {
+    "name" : "/input/images",
+    "size" : 0
+  },
+  {
+    "name" : "/input/images/ci-sis-logo.png",
+    "size" : 61365,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/anImage.png",
+    "size" : 36288
+  },
+  {
+    "name" : "/input/images/FormesDocumentsCDA.png",
+    "size" : 200143,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/ExempleRéférencementElémentCodé.png",
+    "size" : 37504,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/EntryRelationshipRelationEntre2Eléments.png",
+    "size" : 14200
+  },
+  {
+    "name" : "/input/images/ExempleRéférencementElémentNonCodé.png",
+    "size" : 79302,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/SchemaXMLCDAR2.png",
+    "size" : 426354,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 695
+  }]
+}

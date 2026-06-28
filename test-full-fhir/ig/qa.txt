@@ -1,0 +1,227 @@
+FRDocumentCore : Validation Results
+=========================================
+
+err = 4, warn = 5, info = 1
+IG Publisher Version: 2.1.2 Out of date - current version is 2.2.10
+Generated Sun Jun 28 07:17:09 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = https://interop.esante.gouv.fr/ig/document/core)
+ Build Errors : 207 / 3 / 0
+ /__w/test-erreur-document-core/test-erreur-document-core/igSource/fsh-generated/resources/ImplementationGuide-ans.document.fr.core : 3 / 2 / 2
+</table>
+== n/a ==
+ERROR: ImplementationGuide/ans.document.fr.core: This IG is version 4.0.1, while the IG 'hl7.cda.uv.core' is from version 5.0.0
+ERROR: en/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/corpsDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/corpsDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/corpsDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/corpsDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/corpsDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/corpsDocument.html#/html/body/div/div/div/div/div/ul/li/a at Line 256, column 8: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèles logiques" cannot be resolved
+ERROR: en/corpsDocument.html#/html/body/div/div/div/div/div/ul/li/a at Line 258, column 8: The link './ressourcesFHIR-corps.html' for "FHIR" cannot be resolved
+ERROR: en/corpsDocument.html#/html/body/div/div/div/div/div/ul/li/a at Line 259, column 8: The link './mappingCDA-FHIR-corps.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 275, column 8: The link '../definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 276, column 8: The link '../definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 277, column 8: The link '../definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 283, column 8: The link '../examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 284, column 8: The link '../examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 285, column 8: The link '../examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
+ERROR: en/enteteDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/enteteDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/enteteDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/enteteDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/enteteDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/enteteDocument.html#/html/body/div/div/div/div/div/ul/li/a at Line 256, column 8: The link './modelesLogiquesMetier-entete.html' for "Modèles logiques métier" cannot be resolved
+ERROR: en/enteteDocument.html#/html/body/div/div/div/div/div/ul/li/a at Line 258, column 8: The link './ressourcesFHIR-entete.html' for "FHIR" cannot be resolved
+ERROR: en/enteteDocument.html#/html/body/div/div/div/div/div/ul/li/a at Line 259, column 8: The link './mappingCDA-FHIR-entete.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/exigencesSpecifiques.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/exigencesSpecifiques.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/exigencesSpecifiques.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/exigencesSpecifiques.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/exigencesSpecifiques.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/introduction.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/introduction.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/introduction.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/introduction.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/introduction.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/ressourcesCDA-corps.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/ressourcesCDA-corps.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/ressourcesCDA-corps.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/ressourcesCDA-corps.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/ressourcesCDA-corps.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 377, column 12: The link 'StructureDefinition-fr-cda-record-target.html#tabs-snap' for "recordTarget" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 384, column 12: The link 'StructureDefinition-fr-cda-author.html#tabs-snap' for "author" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 391, column 12: The link 'StructureDefinition-fr-cda-data-enterer.html#tabs-snap' for "dataEnterer" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 398, column 12: The link 'StructureDefinition-fr-cda-informant.html#tabs-snap' for "informant" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 405, column 12: The link 'StructureDefinition-fr-cda-custodian.html' for "custodian" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 412, column 12: The link 'StructureDefinition-fr-cda-information-recipient.html#tabs-snap' for "informationRecipient" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 419, column 12: The link 'StructureDefinition-fr-cda-legal-authenticator.html#tabs-snap' for "legalAuthenticator" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 426, column 12: The link 'StructureDefinition-fr-cda-authenticator.html#tabs-snap' for "authenticator" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 433, column 12: The link 'StructureDefinition-fr-cda-participant.html#tabs-snap' for "participant" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 440, column 12: The link 'StructureDefinition-fr-cda-inFulfillment-of.html#tabs-snap' for "inFulfillmentOf" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 447, column 12: The link 'StructureDefinition-fr-cda-documentation-of.html#tabs-snap' for "documentationOf" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 454, column 12: The link 'StructureDefinition-fr-cda-related-document.html#tabs-snap' for "relatedDocument" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 461, column 12: The link 'StructureDefinition-fr-cda-authorization.html#tabs-snap' for "authorization" cannot be resolved
+ERROR: en/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 468, column 12: The link 'StructureDefinition-fr-cda-component-of.html#tabs-snap' for "componentOf" cannot be resolved
+ERROR: en/ressourcesCDA-struc-gen.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/ressourcesCDA-struc-gen.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/ressourcesCDA-struc-gen.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/ressourcesCDA-struc-gen.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/ressourcesCDA-struc-gen.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/securite.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/securite.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/securite.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/securite.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/securite.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/structureGenerale.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/structureGenerale.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/structureGenerale.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/structureGenerale.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/structureGenerale.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/structureGenerale.html#/html/body/div/div/div/div/div/ul/li/a at Line 257, column 8: The link './ressourcesFHIR-struc-gen.html' for "FHIR" cannot be resolved
+ERROR: en/structureGenerale.html#/html/body/div/div/div/div/div/ul/li/a at Line 258, column 8: The link './mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/translationinfo.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: en/translationinfo.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/translationinfo.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: en/translationinfo.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: en/translationinfo.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/corpsDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/corpsDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/corpsDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/corpsDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/corpsDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/corpsDocument.html#/html/body/div/div/div/div/div/ul/li/a at Line 249, column 8: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèles logiques" cannot be resolved
+ERROR: fr/corpsDocument.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 8: The link './ressourcesFHIR-corps.html' for "FHIR" cannot be resolved
+ERROR: fr/corpsDocument.html#/html/body/div/div/div/div/div/ul/li/a at Line 252, column 8: The link './mappingCDA-FHIR-corps.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 268, column 8: The link '../definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 269, column 8: The link '../definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 270, column 8: The link '../definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 276, column 8: The link '../examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 277, column 8: The link '../examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 278, column 8: The link '../examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
+ERROR: fr/enteteDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/enteteDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/enteteDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/enteteDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/enteteDocument.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/enteteDocument.html#/html/body/div/div/div/div/div/ul/li/a at Line 249, column 8: The link './modelesLogiquesMetier-entete.html' for "Modèles logiques métier" cannot be resolved
+ERROR: fr/enteteDocument.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 8: The link './ressourcesFHIR-entete.html' for "FHIR" cannot be resolved
+ERROR: fr/enteteDocument.html#/html/body/div/div/div/div/div/ul/li/a at Line 252, column 8: The link './mappingCDA-FHIR-entete.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/exigencesSpecifiques.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/exigencesSpecifiques.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/exigencesSpecifiques.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/exigencesSpecifiques.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/exigencesSpecifiques.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/introduction.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/introduction.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/introduction.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/introduction.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/introduction.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/ressourcesCDA-corps.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/ressourcesCDA-corps.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/ressourcesCDA-corps.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/ressourcesCDA-corps.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/ressourcesCDA-corps.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 370, column 12: The link 'StructureDefinition-fr-cda-record-target.html#tabs-snap' for "recordTarget" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 377, column 12: The link 'StructureDefinition-fr-cda-author.html#tabs-snap' for "author" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 384, column 12: The link 'StructureDefinition-fr-cda-data-enterer.html#tabs-snap' for "dataEnterer" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 391, column 12: The link 'StructureDefinition-fr-cda-informant.html#tabs-snap' for "informant" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 398, column 12: The link 'StructureDefinition-fr-cda-custodian.html' for "custodian" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 405, column 12: The link 'StructureDefinition-fr-cda-information-recipient.html#tabs-snap' for "informationRecipient" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 412, column 12: The link 'StructureDefinition-fr-cda-legal-authenticator.html#tabs-snap' for "legalAuthenticator" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 419, column 12: The link 'StructureDefinition-fr-cda-authenticator.html#tabs-snap' for "authenticator" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 426, column 12: The link 'StructureDefinition-fr-cda-participant.html#tabs-snap' for "participant" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 433, column 12: The link 'StructureDefinition-fr-cda-inFulfillment-of.html#tabs-snap' for "inFulfillmentOf" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 440, column 12: The link 'StructureDefinition-fr-cda-documentation-of.html#tabs-snap' for "documentationOf" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 447, column 12: The link 'StructureDefinition-fr-cda-related-document.html#tabs-snap' for "relatedDocument" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 454, column 12: The link 'StructureDefinition-fr-cda-authorization.html#tabs-snap' for "authorization" cannot be resolved
+ERROR: fr/ressourcesCDA-entete.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 461, column 12: The link 'StructureDefinition-fr-cda-component-of.html#tabs-snap' for "componentOf" cannot be resolved
+ERROR: fr/ressourcesCDA-struc-gen.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/ressourcesCDA-struc-gen.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/ressourcesCDA-struc-gen.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/ressourcesCDA-struc-gen.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/ressourcesCDA-struc-gen.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/securite.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/securite.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/securite.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/securite.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/securite.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/structureGenerale.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/structureGenerale.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/structureGenerale.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/structureGenerale.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/structureGenerale.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/structureGenerale.html#/html/body/div/div/div/div/div/ul/li/a at Line 250, column 8: The link './ressourcesFHIR-struc-gen.html' for "FHIR" cannot be resolved
+ERROR: fr/structureGenerale.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 8: The link './mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/translationinfo.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'mappingCDA-FHIR-struc-gen.html' for "Mapping CDA / FHIR" cannot be resolved
+ERROR: fr/translationinfo.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'StructureDefinition-fr-lm-header-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/translationinfo.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 10: The link 'mappingCDA-FHIR-entete.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+ERROR: fr/translationinfo.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 155, column 10: The link 'StructureDefinition-fr-lm-corps-document.html' for "Modèle logique métier" cannot be resolved
+ERROR: fr/translationinfo.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 161, column 10: The link 'mappingCDA-FHIR-corps.html' for "Mapping Métier/CDA/FHIR" cannot be resolved
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-ans.document.fr.core.json ==
+INFORMATION: ImplementationGuide/ans.document.fr.core: ImplementationGuide.language: The value provided ('fr') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = Error from https://tx.fhir.org/r4: Error: The cache '83bbb59c-a1be-4bca-ba44-1f7c3e981847' is not known to this server. Caches are created with $cache-control?mode=start; this one was never created, or has expired or been released)
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.jurisdiction[0]: Error from https://tx.fhir.org/r4: Error: The cache '83bbb59c-a1be-4bca-ba44-1f7c3e981847' is not known to this server. Caches are created with $cache-control?mode=start; this one was never created, or has expired or been released
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.extension[30].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
+WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.dependsOn[2]: The ImplementationGuide is based on FHIR version 4.0.1 but package hl7.cda.uv.core#2.0.3-sd is based on FHIR version 5.0.0. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
+WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.dependsOn[4]: The ImplementationGuide uses package hl7.fhir.fr.core#2.1.0 released on 2024-09-04, but the most recent appropriate version is 2.2.0. This reference is getting old and the more recent version should be considered
