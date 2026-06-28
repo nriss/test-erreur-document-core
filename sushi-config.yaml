@@ -30,7 +30,6 @@ dependencies:
   hl7.fhir.uv.xver-r5.r4: latest
   ans.fhir.fr.annuaire: 1.1.0
   hl7.fhir.uv.fhir-clinical-document: latest
-  ihe.pharm.mpd: 1.0.0-comment-2 
 
 pages:
     index.md:
